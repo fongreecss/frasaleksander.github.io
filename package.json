@@ -1,0 +1,27 @@
+{
+  "name": "frasaleksander.github.io",
+  "version": "1.0.0",
+  "description": "My personal webpage/portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frasaleksander/frasaleksander.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "github",
+    "page",
+    "website",
+    "web",
+    "development"
+  ],
+  "author": "Aleksander Fras",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frasaleksander/frasaleksander.github.io/issues"
+  },
+  "homepage": "https://github.com/frasaleksander/frasaleksander.github.io#readme"
+}

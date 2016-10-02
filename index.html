@@ -14,8 +14,32 @@
 				font-size: 100%;
 				font-family: sans-serif, "Arial";
 			}
-			h1 {
-
+			h1,h2,h3,h4,h5,h6 {
+				margin:0;
+				padding:0;
+				line-height: 1.2;
+			}
+			h1 { font-size: 8em; }
+			h2 { font-size: 6em; }
+			h3 { font-size: 4em; }
+			h4 { font-size: 3em; }
+			h5 { font-size: 2em; }
+			h6 { font-size: 1em; }
+			p {
+				margin:0;
+				padding:0;
+				font-size:1.2em;
+				line-height:1.5;
+			}
+			.skip {
+				position:absolute;
+				top:-100000px;
+				left:-100000px;
+				width: 1px;
+				height: 1px;
+				max-width: 1px;
+				max-height: 1px;
+				overflow:hidden;
 			}
         </style>
     </head>
@@ -23,12 +47,12 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-      <section id="page-info">
+      <section id="page-info" class="skips">
 		  <h1 id="page-title">Aleksander Fras - Web developer portfolio</h1>
 		  <p id="page-description">Hi, I am Aleksander and I am web developer currently based in Ljubljana, Slovenia. Browse through my page to learn more about me and my projects.</p>
 	  </section>
 	  <section id="about">
-	  	<h2 class="page-section-title">What do you want to know?</h2>
+	  	<h2 class="page-section-title">About me</h2>
 
 	  </section>
 	  <script>
