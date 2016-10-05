@@ -14,5 +14,5 @@ function renderTemplate(templateFile, jsonFile, renderElementSelector) {
 }
 
 (function ($) {
-	renderTemplate('view/work.mustache', 'view/work.json', '#work-collection');
+	renderTemplate('view/work.mustache', 'view/work.json', '.work-section');
 })(window.jQuery);
