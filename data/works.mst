@@ -1,0 +1,3 @@
+{{#works}}
+    <li {{#isactive}}data-isactive="{{isactive}}"{{/isactive}}><a target="_blank" href="{{href}}">{{name}}</a></li>
+{{/works}} 

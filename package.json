@@ -2,9 +2,10 @@
   "name": "frasaleksander.github.io",
   "version": "1.0.0",
   "description": "My personal webpage/portfolio",
-  "main": "index.js",
+  "main": "app/build.js",
   "scripts": {
-    "test": "test/test.js"
+    "test": "test/test.js",
+    "watch": "(watchify app/app.js -o app/build.js) & livereload"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/frasaleksander/frasaleksander.github.io/issues"
   },
-  "homepage": "https://github.com/frasaleksander/frasaleksander.github.io#readme"
+  "homepage": "https://github.com/frasaleksander/frasaleksander.github.io#readme",
+  "devDependencies": {
+    "jquery": "^3.1.1",
+    "mustache": "^2.2.1"
+  }
 }
