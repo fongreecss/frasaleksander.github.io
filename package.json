@@ -5,7 +5,7 @@
   "main": "app/build.js",
   "scripts": {
     "test": "test/test.js",
-    "watch": "(watchify app/app.js -o app/build.js) & livereload"
+    "watch": "(watchify app/app.js -o app/build.js) & livereload & (compass watch)"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,12 @@
   "devDependencies": {
     "jquery": "^3.1.1",
     "mustache": "^2.2.1"
+  },
+  "dependencies": {
+    "classlist-polyfill": "^1.0.3",
+    "deepmerge": "^1.1.0",
+    "isotope-layout": "^3.0.1",
+    "mutation-observer": "^1.0.2",
+    "whatwg-fetch": "^1.0.0"
   }
 }

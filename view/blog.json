@@ -1,0 +1,17 @@
+{
+	"posts": [{
+		"name" : "Hello World",
+		"excerpt" : "",
+		"content" : "Hello and welcome to my website!",
+		"created" : "10.10.2016",
+		"modified" : "10.10.2016",
+		"author" : "Aleksander Fras"
+	}, {
+		"name" : "Second Post",
+		"excerpt" "",
+		"content": "Second post content",
+		"created" : "10.10.2016",
+		"modified" : "10.10.2016",
+		"author" : "Aleksander Fras"
+	}]
+}

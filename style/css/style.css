@@ -1,0 +1,180 @@
+/* line 2, ../scss/style.scss */
+html, body, #wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 7, ../scss/style.scss */
+html {
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 14, ../scss/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.07em;
+  font-family: "PT Sans", sans-serif, "Arial";
+  background-color: #231f20;
+  color: #231f20;
+}
+
+/* line 23, ../scss/style.scss */
+*, *:before, *:after {
+  -ms-box-sizing: inherit;
+  -o-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* line 31, ../scss/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.07;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* line 38, ../scss/style.scss */
+h1 {
+  font-size: 6.854em;
+}
+
+/* line 39, ../scss/style.scss */
+h2 {
+  font-size: 6.854em;
+}
+
+/* line 40, ../scss/style.scss */
+h3 {
+  font-size: 4.236em;
+}
+
+/* line 41, ../scss/style.scss */
+h4 {
+  font-size: 2.618em;
+}
+
+/* line 42, ../scss/style.scss */
+h5 {
+  font-size: 1.618em;
+}
+
+/* line 43, ../scss/style.scss */
+h6 {
+  font-size: 1em;
+}
+
+/* line 44, ../scss/style.scss */
+p {
+  font-weight: normal;
+  margin: 0 0 1.2em 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* line 50, ../scss/style.scss */
+a, a img, img {
+  outline: none;
+  border: 0;
+}
+
+/* line 54, ../scss/style.scss */
+a {
+  color: #231f20;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* line 60, ../scss/style.scss */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 66, ../scss/style.scss */
+ul li {
+  line-height: 1.250;
+}
+
+/* line 70, ../scss/style.scss */
+.skip {
+  position: absolute;
+  top: -100000px;
+  left: -100000px;
+  width: 1px;
+  height: 1px;
+  max-width: 1px;
+  max-height: 1px;
+  overflow: hidden;
+}
+
+/* line 81, ../scss/style.scss */
+#content, #main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 89, ../scss/style.scss */
+#main {
+  padding: 2em;
+  background-color: #fefefe;
+}
+
+/* line 94, ../scss/style.scss */
+.main-section {
+  overflow: hidden;
+  background-color: #fefefe;
+}
+
+/* line 99, ../scss/style.scss */
+.main-section > .inner {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease 0s;
+}
+
+/* line 105, ../scss/style.scss */
+.main-section.active-section > .inner {
+  max-height: 30em;
+  transition: max-height 0.4s ease 0.2s;
+}
+
+/* line 110, ../scss/style.scss */
+.main-section.active-section .section-title {
+  background-color: #231f20;
+}
+
+/* line 114, ../scss/style.scss */
+.main-section .show-more {
+  display: none;
+}
+
+/* line 118, ../scss/style.scss */
+.main-section.active-section .section-title a {
+  color: #fefefe;
+}
+
+/* line 123, ../scss/style.scss */
+#work-collection li {
+  line-height: 1.4;
+}
+
+/* line 128, ../scss/style.scss */
+.section-title {
+  display: inline-block;
+  letter-spacing: 0.03em;
+}
+
+/*# sourceMappingURL=style.css.map */

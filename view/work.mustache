@@ -1,10 +1,5 @@
-<header class="section-meta section-header">
-	<h2 class="work-title section-title">Work</h2>
-</header>
-<div class="inner">
-	<ul id="work-collection">
+<ul id="work-collection">
 	{{#works}}
     	<li {{#isactive}}data-isactive="{{isactive}}"{{/isactive}}><a target="_blank" href="{{href}}">{{name}}</a></li>
 	{{/works}}
-	</ul>
-</div>
+</ul>
