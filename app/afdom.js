@@ -64,11 +64,11 @@ window.Mustache         = require('mustache');
 		}
 
 		var o = Object.assign({}, {
-			'template'       : '',
-			'data'           : '',
-			'appendTo'       : '',
-			'onBegin'        : function(){},
-			'onSuccess'      : function(){}
+			'template'         : '',
+			'data'             : '',
+			'appendTo'         : '',
+			'onBegin'          : function(){},
+			'onSuccess'        : function(){}
 		}, input);
 
 		if(!(o.template && o.data)) {
