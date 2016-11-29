@@ -2,7 +2,10 @@
     "sectionTitle" : "Work",
     "sectionDescription" : "Check out this list of my latest work!",
     "works" : [
-        {
+    	{
+    		"name" : "Računovodstvo Navotnik", 
+          "href" : "http://racunovodstvo-navotnik.si"
+    	}, {
           "name" : "Sempatja", 
           "href" : "http://www.sempatja.si",
           "isactive" : "true"
