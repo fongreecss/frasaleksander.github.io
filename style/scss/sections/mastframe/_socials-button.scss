@@ -9,7 +9,6 @@
     left: 0;
     @include transform-origin(0, 50%);
     @include transform(rotate(-90deg));
-    color: #fff;
     font-size: 20px;
     left: 24px;
     &:after {
@@ -27,4 +26,8 @@
         @include opacity(1);
         @include transform(rotate(90deg) translate(40%, 18%) scale(1));
     }
+}
+
+.mastframe-left-panel[data-text-color="white"] .socials-button {
+    color: #fff;
 }
