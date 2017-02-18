@@ -34,56 +34,89 @@ body {
   overflow-x: hidden;
 }
 
+/* line 33, ../scss/base/_base.scss */
+a,
+a:link,
+a:active,
+a:focus,
+a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 5, ../scss/navigation/_left-menu-button.scss */
+.left-menu-button {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 48px;
+  height: 32px;
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+/* line 12, ../scss/navigation/_left-menu-button.scss */
+.left-menu-button .middle-line,
+.left-menu-button .top-line,
+.left-menu-button .bottom-line {
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition-delay: 0s;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  height: 4px;
+  background-color: #fff;
+}
+/* line 20, ../scss/navigation/_left-menu-button.scss */
+.left-menu-button .middle-line {
+  top: calc(50% - 2px);
+  left: 0;
+  right: 25%;
+}
+/* line 25, ../scss/navigation/_left-menu-button.scss */
+.left-menu-button .top-line,
+.left-menu-button .bottom-line {
+  right: 0;
+  left: 25%;
+}
+/* line 30, ../scss/navigation/_left-menu-button.scss */
+.left-menu-button .top-line {
+  top: 0;
+}
+/* line 33, ../scss/navigation/_left-menu-button.scss */
+.left-menu-button .bottom-line {
+  bottom: 0;
+}
+
+/* line 39, ../scss/navigation/_left-menu-button.scss */
+.left-menu-button:hover .middle-line {
+  right: 0;
+  left: 25%;
+}
+/* line 43, ../scss/navigation/_left-menu-button.scss */
+.left-menu-button:hover .top-line,
+.left-menu-button:hover .bottom-line {
+  left: 0;
+  right: 25%;
+}
+
 /*
  * VARIABLES
  */
 /*
- * STYLE
+ *
  */
-/* line 16, ../scss/sections/mastframe/_mastframe.scss */
-.mastframe {
-  position: absolute;
-  top: 4rem;
-  right: 3.5rem;
-  bottom: 4rem;
-  left: 3.5rem;
-  /* &:before,
-  &:after {
-      position: absolute;
-      content: "";
-  }
-  &.section-active:before {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: $mastframe-border-width;
-      background-color: $mastframe-frame-color;
-  }
-  &.section-active:after {
-      top: 0;
-      left: 0;
-      width: 3rem;
-      height: $mastframe-border-width;
-      background-color: $mastframe-frame-color;
-  }*/
-}
-
-/* line 43, ../scss/sections/mastframe/_mastframe.scss */
-.mastframe-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 49, ../scss/sections/mastframe/_mastframe.scss */
+/* line 1, ../scss/sections/mastframe/_site-title.scss */
 .site-title {
   font-style: italic;
   position: absolute;
   font-size: 0;
-  top: -2rem;
-  left: 0rem;
+  top: 0;
+  left: 0;
 }
-/* line 55, ../scss/sections/mastframe/_mastframe.scss */
+/* line 7, ../scss/sections/mastframe/_site-title.scss */
 .site-title span {
   display: inline-block;
   vertical-align: middle;
@@ -91,7 +124,7 @@ body {
   *zoom: 1;
   *display: inline;
   overflow: hidden;
-  font-size: 3rem;
+  font-size: 64px;
   max-width: 0;
   -moz-transition: max-width 0.6s ease 0s;
   -o-transition: max-width 0.6s ease 0s;
@@ -99,15 +132,20 @@ body {
   -webkit-transition-delay: 0s;
   transition: max-width 0.6s ease 0s;
 }
-/* line 61, ../scss/sections/mastframe/_mastframe.scss */
+/* line 13, ../scss/sections/mastframe/_site-title.scss */
 .site-title span.initial {
   max-width: none;
 }
-/* line 64, ../scss/sections/mastframe/_mastframe.scss */
+/* line 16, ../scss/sections/mastframe/_site-title.scss */
 .site-title span.whitespace {
   margin-left: 0.3rem;
 }
-/* line 69, ../scss/sections/mastframe/_mastframe.scss */
+/* line 20, ../scss/sections/mastframe/_site-title.scss */
+.site-title span:not(.initial) {
+  background-color: #fff;
+  color: #231f20;
+}
+/* line 25, ../scss/sections/mastframe/_site-title.scss */
 .site-title:hover span {
   width: auto;
   max-width: 3rem;
@@ -116,6 +154,52 @@ body {
   -webkit-transition: max-width 1.2s ease;
   -webkit-transition-delay: 0s;
   transition: max-width 1.2s ease 0s;
+}
+
+/* 
+ *
+ */
+/* line 5, ../scss/sections/mastframe/_socials-button.scss */
+.socials-button {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -moz-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 20px;
+  left: 24px;
+}
+
+/*
+ * STYLE
+ */
+/* line 23, ../scss/sections/mastframe/_mastframe.scss */
+.mastframe {
+  position: absolute;
+  top: 48px;
+  right: 56px;
+  bottom: 48px;
+  left: 56px;
+}
+
+/* line 31, ../scss/sections/mastframe/_mastframe.scss */
+.mastframe-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

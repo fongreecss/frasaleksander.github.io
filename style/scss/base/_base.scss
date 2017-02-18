@@ -29,3 +29,12 @@ body {
     overflow-y: visible;
     overflow-x: hidden;
 }
+
+a,
+a:link,
+a:active,
+a:focus,
+a:visited {
+    outline: none;
+    text-decoration: none;
+}

@@ -1,0 +1,16 @@
+/* 
+ *
+ */
+
+.socials-button {
+    @include inline-block();
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include transform-origin(0, 50%);
+    @include transform(rotate(-90deg));
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 20px;
+    left: 24px;
+}
