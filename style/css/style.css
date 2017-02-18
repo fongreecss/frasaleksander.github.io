@@ -190,10 +190,10 @@ a:visited {
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
-  -moz-transform: rotate(90deg) translate(50%, 18%) scale(0);
-  -ms-transform: rotate(90deg) translate(50%, 18%) scale(0);
-  -webkit-transform: rotate(90deg) translate(50%, 18%) scale(0);
-  transform: rotate(90deg) translate(50%, 18%) scale(0);
+  -moz-transform: rotate(90deg) translate(40%, 18%) scale(0);
+  -ms-transform: rotate(90deg) translate(40%, 18%) scale(0);
+  -webkit-transform: rotate(90deg) translate(40%, 18%) scale(0);
+  transform: rotate(90deg) translate(40%, 18%) scale(0);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -moz-transition: all 0.3s ease 0s;
@@ -207,10 +207,10 @@ a:visited {
 .socials-button:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  -moz-transform: rotate(90deg) translate(50%, 18%) scale(1);
-  -ms-transform: rotate(90deg) translate(50%, 18%) scale(1);
-  -webkit-transform: rotate(90deg) translate(50%, 18%) scale(1);
-  transform: rotate(90deg) translate(50%, 18%) scale(1);
+  -moz-transform: rotate(90deg) translate(40%, 18%) scale(1);
+  -ms-transform: rotate(90deg) translate(40%, 18%) scale(1);
+  -webkit-transform: rotate(90deg) translate(40%, 18%) scale(1);
+  transform: rotate(90deg) translate(40%, 18%) scale(1);
 }
 
 /* line 1, ../scss/sections/mastframe/_site-logo.scss */

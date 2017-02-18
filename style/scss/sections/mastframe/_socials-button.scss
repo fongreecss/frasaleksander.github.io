@@ -16,7 +16,7 @@
         position: absolute;
         content: "find me on social networks";
         @include inline-block();
-        @include transform(rotate(90deg) translate(50%, 18%) scale(0));
+        @include transform(rotate(90deg) translate(40%, 18%) scale(0));
         @include opacity(0);
         @include transition(all 0.3s ease 0s);
     }
@@ -25,6 +25,6 @@
 .socials-button:hover {
     &:after {
         @include opacity(1);
-        @include transform(rotate(90deg) translate(50%, 18%) scale(1));
+        @include transform(rotate(90deg) translate(40%, 18%) scale(1));
     }
 }
