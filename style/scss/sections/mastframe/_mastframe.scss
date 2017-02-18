@@ -2,7 +2,7 @@
  * VARIABLES
  */
 
-$mastframe-frame-color:#fff;
+$mastframe-frame-color:transparent;
 $mastframe-border-width:1px;
 $mastframe-top:48px;
 $mastframe-right:56px;
@@ -23,14 +23,19 @@ $mastframe-left:56px;
 
 .mastframe {
     position: absolute;
-    top: $mastframe-top;
-    right: $mastframe-right;
-    bottom: $mastframe-bottom;
-    left: $mastframe-left;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @if $mastframe-frame-color !=transparent {
+        background-color: $mastframe-frame-color;
+    }
 }
 
-.mastframe-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.mastframe-left-panel {
+    position: absolute;
+    top: $mastframe-top;
+    bottom: $mastframe-bottom;
+    left: $mastframe-left;
+    width: 64px;
 }
