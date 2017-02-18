@@ -177,16 +177,55 @@ a:visited {
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  padding: 5px 10px;
   color: #fff;
   font-size: 20px;
   left: 24px;
+}
+/* line 15, ../scss/sections/mastframe/_socials-button.scss */
+.socials-button:after {
+  position: absolute;
+  content: "find me on social networks";
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-transform: rotate(90deg) translate(50%, 18%) scale(0);
+  -ms-transform: rotate(90deg) translate(50%, 18%) scale(0);
+  -webkit-transform: rotate(90deg) translate(50%, 18%) scale(0);
+  transform: rotate(90deg) translate(50%, 18%) scale(0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition-delay: 0s;
+  transition: all 0.3s ease 0s;
+}
+
+/* line 26, ../scss/sections/mastframe/_socials-button.scss */
+.socials-button:hover:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: rotate(90deg) translate(50%, 18%) scale(1);
+  -ms-transform: rotate(90deg) translate(50%, 18%) scale(1);
+  -webkit-transform: rotate(90deg) translate(50%, 18%) scale(1);
+  transform: rotate(90deg) translate(50%, 18%) scale(1);
+}
+
+/* line 1, ../scss/sections/mastframe/_site-logo.scss */
+.site-logo {
+  font-style: italic;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 64px;
 }
 
 /*
  * STYLE
  */
-/* line 23, ../scss/sections/mastframe/_mastframe.scss */
+/* line 24, ../scss/sections/mastframe/_mastframe.scss */
 .mastframe {
   position: absolute;
   top: 48px;
@@ -195,7 +234,7 @@ a:visited {
   left: 56px;
 }
 
-/* line 31, ../scss/sections/mastframe/_mastframe.scss */
+/* line 32, ../scss/sections/mastframe/_mastframe.scss */
 .mastframe-inner {
   position: relative;
   width: 100%;
