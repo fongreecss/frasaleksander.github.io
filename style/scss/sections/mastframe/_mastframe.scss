@@ -15,10 +15,10 @@ $mastframe-left:56px;
 
 @include keyframes(resizebgimage) {
     0% {
-        background-size: 100%;
+        background-size: auto 100%;
     }
     100% {
-        background-size: 115%;
+        background-size: auto 105%;
     }
 }
 
@@ -35,15 +35,15 @@ $mastframe-left:56px;
     background-image: url('http://frasaleksander.github.io/images/front/aleksanderfras-2.jpg');
     background-position:center center;
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size:auto 100%;
     -webkit-filter: grayscale(1);
     -ms-filter: grayscale(1);
     -moz-filter: grayscale(1);
     -o-filter: grayscale(1);
     filter: grayscale(1);
-    background-size:110%;
     @include animation-name(resizebgimage);
-    @include animation-duration(6s);
+    @include animation-duration(10s);
+    @include animation-timing-function(ease-in);
     @include animation-iteration-count(1);
     @include animation-fill-mode(forwards);
 }
