@@ -32,7 +32,7 @@ $mastframe-left:56px;
     @if $mastframe-frame-color !=transparent {
         background-color: $mastframe-frame-color;
     }
-    background-image: url('http://frasaleksander.github.io/images/front/aleksanderfras-2.jpg');
+    background-image: url('https://frasaleksander.github.io/images/front/aleksanderfras-2.jpg');
     background-position:top center;
     background-repeat: no-repeat;
     background-size:auto 100%;
@@ -42,6 +42,14 @@ $mastframe-left:56px;
     @include animation-timing-function(ease);
     @include animation-iteration-count(1);
     @include animation-fill-mode(forwards);
+    @include transition(all 0.4s ease 0s);
+}
+
+body[data-left-menu-is-active="true"] .mastframe {
+    top: 4vh;
+    bottom: 4vh;
+    left: 25vw;
+    right: -25vw;
 }
 
 @import "mastframe-left-panel";
