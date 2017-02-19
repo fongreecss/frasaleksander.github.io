@@ -18,7 +18,7 @@ $mastframe-left:56px;
         background-size: auto 100%;
     }
     100% {
-        background-size: auto 105%;
+        background-size: auto 107%;
     }
 }
 
@@ -33,17 +33,13 @@ $mastframe-left:56px;
         background-color: $mastframe-frame-color;
     }
     background-image: url('http://frasaleksander.github.io/images/front/aleksanderfras-2.jpg');
-    background-position:center center;
+    background-position:top center;
     background-repeat: no-repeat;
     background-size:auto 100%;
-    -webkit-filter: grayscale(1);
-    -ms-filter: grayscale(1);
-    -moz-filter: grayscale(1);
-    -o-filter: grayscale(1);
-    filter: grayscale(1);
+    @include filter(grayscale(0.3));
     @include animation-name(resizebgimage);
-    @include animation-duration(10s);
-    @include animation-timing-function(ease-in);
+    @include animation-duration(7s);
+    @include animation-timing-function(ease);
     @include animation-iteration-count(1);
     @include animation-fill-mode(forwards);
 }

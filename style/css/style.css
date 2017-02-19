@@ -56,7 +56,7 @@ a:visited {
     background-size: auto 100%;
   }
   100% {
-    background-size: auto 105%;
+    background-size: auto 107%;
   }
 }
 @-moz-keyframes resizebgimage {
@@ -64,7 +64,7 @@ a:visited {
     background-size: auto 100%;
   }
   100% {
-    background-size: auto 105%;
+    background-size: auto 107%;
   }
 }
 @-ms-keyframes resizebgimage {
@@ -72,7 +72,7 @@ a:visited {
     background-size: auto 100%;
   }
   100% {
-    background-size: auto 105%;
+    background-size: auto 107%;
   }
 }
 @-o-keyframes resizebgimage {
@@ -80,7 +80,7 @@ a:visited {
     background-size: auto 100%;
   }
   100% {
-    background-size: auto 105%;
+    background-size: auto 107%;
   }
 }
 @keyframes resizebgimage {
@@ -88,7 +88,7 @@ a:visited {
     background-size: auto 100%;
   }
   100% {
-    background-size: auto 105%;
+    background-size: auto 107%;
   }
 }
 /* line 25, ../scss/sections/mastframe/_mastframe.scss */
@@ -100,23 +100,20 @@ a:visited {
   bottom: 0;
   overflow: hidden;
   background-image: url("http://frasaleksander.github.io/images/front/aleksanderfras-2.jpg");
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  -webkit-filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  filter: grayscale(1);
+  -webkit-filter: grayscale(0.3);
+  filter: grayscale(0.3);
   -moz-animation-name: resizebgimage;
   -webkit-animation-name: resizebgimage;
   animation-name: resizebgimage;
-  -moz-animation-duration: 10s;
-  -webkit-animation-duration: 10s;
-  animation-duration: 10s;
-  -moz-animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
+  -moz-animation-duration: 7s;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -moz-animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
