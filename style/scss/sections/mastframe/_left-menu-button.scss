@@ -13,7 +13,7 @@ $left-menu-button-line-color:#fff;
     .middle-line,
     .top-line,
     .bottom-line {
-        @include transition(all 0.3s ease 0s);
+        @include transition(all 0.4s ease 0s);
         position: absolute;
         height: $left-menu-button-line-height + px;
         background-color: $left-menu-button-line-color;
@@ -36,11 +36,23 @@ $left-menu-button-line-color:#fff;
     }
 }
 
-.left-menu-button:hover {
+
+/*.left-menu-button:hover {
     .middle-line {
         right: 0;
         left: 25%;
     }
-}
+}*/
 
-.left-menu-button.active {}
+.left-menu-button:hover,
+[data-left-menu-is-active="true"].left-menu-button {
+    .middle-line {
+        left: 25%;
+        right: 0%;
+    }
+    .top-line,
+    .bottom-line {
+        right: 25%;
+        left: 0;
+    }
+}

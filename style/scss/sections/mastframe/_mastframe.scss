@@ -50,6 +50,7 @@ body[data-left-menu-is-active="true"] .mastframe {
     bottom: 4vh;
     left: 25vw;
     right: -25vw;
+    //@include filter(blur(5px));
 }
 
 @import "mastframe-left-panel";

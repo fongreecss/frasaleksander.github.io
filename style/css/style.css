@@ -284,11 +284,11 @@ body[data-left-menu-is-active="true"] .mastframe {
 .left-menu-button .middle-line,
 .left-menu-button .top-line,
 .left-menu-button .bottom-line {
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease;
   -webkit-transition-delay: 0s;
-  transition: all 0.3s ease 0s;
+  transition: all 0.4s ease 0s;
   position: absolute;
   height: 4px;
   background-color: #fff;
@@ -314,10 +314,25 @@ body[data-left-menu-is-active="true"] .mastframe {
   bottom: 0;
 }
 
-/* line 40, ../scss/sections/mastframe/_left-menu-button.scss */
-.left-menu-button:hover .middle-line {
-  right: 0;
+/*.left-menu-button:hover {
+    .middle-line {
+        right: 0;
+        left: 25%;
+    }
+}*/
+/* line 49, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button:hover .middle-line,
+[data-left-menu-is-active="true"].left-menu-button .middle-line {
   left: 25%;
+  right: 0%;
+}
+/* line 53, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button:hover .top-line,
+.left-menu-button:hover .bottom-line,
+[data-left-menu-is-active="true"].left-menu-button .top-line,
+[data-left-menu-is-active="true"].left-menu-button .bottom-line {
+  right: 25%;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
