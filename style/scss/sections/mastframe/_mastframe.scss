@@ -28,10 +28,11 @@ $mastframe-left:56px;
     left: 0;
     right: 0;
     bottom: 0;
+    overflow: hidden;
     @if $mastframe-frame-color !=transparent {
         background-color: $mastframe-frame-color;
     }
-    background-image: url('http://frasaleksander.github.io/images/front/aleksanderfras-1.jpg');
+    background-image: url('http://frasaleksander.github.io/images/front/aleksanderfras-2.jpg');
     background-position:center center;
     background-repeat: no-repeat;
     background-size:100%;

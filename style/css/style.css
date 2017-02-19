@@ -98,6 +98,7 @@ a:visited {
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: hidden;
   background-image: url("http://frasaleksander.github.io/images/front/aleksanderfras-1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
