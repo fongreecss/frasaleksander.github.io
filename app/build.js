@@ -5,7 +5,8 @@ window.$ = window.jQuery = require('jquery');
     var leftMenuButton = $('.left-menu-button');
     var body = $('body');
 
-    leftMenuButton.on('click', function() {
+    leftMenuButton.on('click', function(e) {
+        e.preventDefault();
         if (body.attr('data-left-menu-is-active') == "true") {
             body.attr('data-left-menu-is-active', "false");
             leftMenuButton.attr('data-left-menu-is-active', "false");
