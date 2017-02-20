@@ -63,15 +63,42 @@ a:visited {
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
+  counter-reset: nav-index;
   position: absolute;
   top: 5vh;
   width: 25vw;
   left: 0;
   margin: 0;
+  padding: 0;
+  padding-left: 5vh;
+  list-style: none;
 }
-/* line 16, ../scss/navigation/_mastnav.scss */
+/* line 20, ../scss/navigation/_mastnav.scss */
+#mastnav .main-navigation li {
+  counter-increment: nav-index;
+  position: relative;
+  height: 3.5rem;
+}
+/* line 25, ../scss/navigation/_mastnav.scss */
 #mastnav .main-navigation a {
   color: #231f20;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: 10px;
+  position: absolute;
+  top: calc(50% - 14px);
+}
+/* line 33, ../scss/navigation/_mastnav.scss */
+#mastnav .main-navigation a:before {
+  content: counter(nav-index,upper-roman) ".";
+  letter-spacing: 0;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 48px;
 }
 
 /*
