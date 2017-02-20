@@ -37,6 +37,10 @@
             @include inline-block();
             width: 48px;
         }
+        span {
+            position: relative;
+            //@include inline-block();
+        }
     }
 }
 

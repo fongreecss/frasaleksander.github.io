@@ -1,5 +1,7 @@
-@mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height) {
-    color: $textColor;
+@mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2) {
+    @if $textColor !='' {
+        color: $textColor;
+    }
     position: relative;
     $steps: $intensity;
     // Ensure the @keyframes are generated at the root level
@@ -9,7 +11,7 @@
             @keyframes #{$name}-anim-#{$i} {
                 @for $i from 0 through $steps {
                     #{percentage($i*(1/$steps))} {
-                        clip: rect( random($height)+px, $width+px, random($height)+px, 0);
+                        clip: rect(random(300)+px, 9999px, random(300)+px, 0);
                     }
                 }
             }
@@ -109,4 +111,50 @@
         left: ($left + 2) + px;
         animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
     }
+}
+
+@include keyframes(noise-anim) {
+    $steps: 20;
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+        }
+    }
+}
+
+.glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: #231f20;
+    background: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    @include animation-name(noise-anim);
+    @include animation-duration(2s);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+    $steps: 20;
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+        }
+    }
+}
+
+.glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: white;
+    background: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
