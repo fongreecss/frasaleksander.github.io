@@ -1,79 +1,158 @@
-$left-menu-button-line-height:4;
-$left-menu-button-width:58;
-$left-menu-button-height: $left-menu-button-width*2/5;
-$left-menu-button-line-color:$white;
-.left-menu-button {
-    position: absolute;
-    cursor: pointer;
-    top: 50%;
-    left: 0;
-    width: $left-menu-button-width + px;
-    height: $left-menu-button-height + px;
-    @include transform(translate(0, -50%));
-    .middle-line,
-    .top-line,
-    .bottom-line {
-        @include transition(all 0.4s ease 0s);
+    $left-menu-button-line-height:4;
+    $left-menu-button-width:58;
+    $left-menu-button-height: $left-menu-button-width*2/5;
+    $left-menu-button-line-color:$white;
+    $left-menu-button-animation-duration: 0.4s;
+    /*
+     * ANIMATIONS
+     */
+    
+    @include keyframes(menuTopLineAnimation_Active) {
+        0% {
+            top: 0;
+            @include transform(rotate(0deg));
+        }
+        50% {
+            top: calc(50% - 2px);
+            @include transform(rotate(0deg));
+        }
+        100% {
+            top: calc(50% - 2px);
+            @include transform(rotate(-40deg));
+        }
+    }
+    
+    @include keyframes(menuBottomLineAnimation_Active) {
+        0% {
+            bottom: 0;
+            @include transform(rotate(0deg));
+        }
+        50% {
+            bottom: calc(50% - 2px);
+            @include transform(rotate(0deg));
+        }
+        100% {
+            bottom: calc(50% - 2px);
+            @include transform(rotate(40deg));
+        }
+    }
+    
+    @include keyframes(menuTopLineAnimation_NonActive) {
+        0% {
+            top: calc(50% - 2px);
+            @include transform(rotate(0deg));
+        }
+        50% {
+            top: calc(50% - 2px);
+            @include transform(rotate(0deg));
+        }
+        100% {
+            top: 0;
+            @include transform(rotate(0deg));
+        }
+    }
+    
+    @include keyframes(menuBottomLineAnimation_NonActive) {
+        0% {
+            bottom: calc(50% - 2px);
+            @include transform(rotate(0deg));
+        }
+        50% {
+            bottom: calc(50% - 2px);
+            @include transform(rotate(0deg));
+        }
+        100% {
+            bottom: 0;
+            @include transform(rotate(0deg));
+        }
+    }
+    /*
+     * STYLES
+     */
+    
+    .left-menu-button {
         position: absolute;
-        height: $left-menu-button-line-height + px;
-        background-color: $left-menu-button-line-color;
-        @include transform-origin(50%, 50%);
-    }
-    .middle-line {
-        top: calc(50% - 2px);
+        cursor: pointer;
+        top: 50%;
         left: 0;
-        right: 100%;
+        width: $left-menu-button-width + px;
+        height: $left-menu-button-height + px;
+        @include transform(translate(0, -50%));
+        .middle-line,
+        .top-line,
+        .bottom-line {
+            //@include transition(all 0.4s ease 0s);
+            position: absolute;
+            height: $left-menu-button-line-height + px;
+            background-color: $left-menu-button-line-color;
+            @include transform-origin(50%, 50%);
+        }
+        .middle-line {
+            top: calc(50% - 2px);
+            left: 0;
+            right: 100%;
+        }
+        .top-line,
+        .bottom-line {
+            right: 15%;
+            left: 15%;
+        }
+        .top-line {
+            top: 0;
+            @include animation-name(menuTopLineAnimation_NonActive);
+            @include animation-duration($left-menu-button-animation-duration);
+            @include animation-timing-function(cubic-bezier(.2, 0, .7, 1));
+            @include animation-iteration-count(1);
+            @include animation-fill-mode(forwards);
+        }
+        .bottom-line {
+            bottom: 0;
+            @include animation-name(menuBottomLineAnimation_NonActive);
+            @include animation-duration($left-menu-button-animation-duration);
+            @include animation-timing-function(cubic-bezier(.2, 0, .7, 1));
+            @include animation-iteration-count(1);
+            @include animation-fill-mode(forwards);
+        }
     }
-    .top-line,
-    .bottom-line {
-        right: 15%;
-        left: 15%;
-    }
-    .top-line {
-        top: 0;
-    }
-    .bottom-line {
-        bottom: 0;
-    }
-}
-
-
-/*.left-menu-button:hover {
+    /*.left-menu-button:hover {
     .middle-line {
         right: 0;
         left: 25%;
     }
 }*/
+    /* .left-menu-button:hover {
 
-.left-menu-button:hover {
-    /* .middle-line {
-        left: 25%;
-        right: 0%;
-    }*/
-    .top-line {
-        @include transform(rotate(-30.5deg));
+        .top-line {
+            @include transform(rotate(-30.5deg));
+        }
+        .bottom-line {
+            @include transform(rotate(30.5deg));
+        }
+        .top-line,
+        .bottom-line {
+            right: 30%;
+            left: 0;
+        }
+    } */
+    
+    [data-left-menu-is-active="true"].left-menu-button {
+        .top-line,
+        .bottom-line {
+            left: 15%;
+            right: 15%;
+        }
+        .top-line {
+            @include animation-name(menuTopLineAnimation_Active);
+            @include animation-duration($left-menu-button-animation-duration);
+            @include animation-timing-function(cubic-bezier(.2, 0, .7, 1));
+            @include animation-iteration-count(1);
+            @include animation-fill-mode(forwards);
+        }
+        .bottom-line {
+            @include animation-name(menuBottomLineAnimation_Active);
+            @include animation-duration($left-menu-button-animation-duration);
+            @include animation-timing-function(cubic-bezier(.2, 0, .7, 1));
+            @include animation-iteration-count(1);
+            @include animation-fill-mode(forwards);
+        }
     }
-    .bottom-line {
-        @include transform(rotate(30.5deg));
-    }
-    .top-line,
-    .bottom-line {
-        right: 30%;
-        left: 0;
-    }
-}
-
-[data-left-menu-is-active="true"].left-menu-button {
-    .top-line,
-    .bottom-line {
-        top: calc(50% - 2px);
-        left: 15%;
-        right: 15%;
-    }
-    .top-line {
-        @include transform(rotate(-45deg));
-    }
-    .bottom-line {
-        @include transform(rotate(45deg));
-    }
-}

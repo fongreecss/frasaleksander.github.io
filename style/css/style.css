@@ -322,7 +322,473 @@ body[data-left-menu-is-active="true"] .mastframe {
   color: #f5f5f5;
 }
 
-/* line 5, ../scss/sections/mastframe/_left-menu-button.scss */
+/*
+ * ANIMATIONS
+ */
+@-webkit-keyframes menuTopLineAnimation_Active {
+  0% {
+    top: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+}
+@-moz-keyframes menuTopLineAnimation_Active {
+  0% {
+    top: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+}
+@-ms-keyframes menuTopLineAnimation_Active {
+  0% {
+    top: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+}
+@-o-keyframes menuTopLineAnimation_Active {
+  0% {
+    top: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+}
+@keyframes menuTopLineAnimation_Active {
+  0% {
+    top: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+}
+@-webkit-keyframes menuBottomLineAnimation_Active {
+  0% {
+    bottom: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+@-moz-keyframes menuBottomLineAnimation_Active {
+  0% {
+    bottom: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+@-ms-keyframes menuBottomLineAnimation_Active {
+  0% {
+    bottom: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+@-o-keyframes menuBottomLineAnimation_Active {
+  0% {
+    bottom: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+@keyframes menuBottomLineAnimation_Active {
+  0% {
+    bottom: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+@-webkit-keyframes menuTopLineAnimation_NonActive {
+  0% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-moz-keyframes menuTopLineAnimation_NonActive {
+  0% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-ms-keyframes menuTopLineAnimation_NonActive {
+  0% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes menuTopLineAnimation_NonActive {
+  0% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes menuTopLineAnimation_NonActive {
+  0% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    top: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes menuBottomLineAnimation_NonActive {
+  0% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-moz-keyframes menuBottomLineAnimation_NonActive {
+  0% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-ms-keyframes menuBottomLineAnimation_NonActive {
+  0% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes menuBottomLineAnimation_NonActive {
+  0% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes menuBottomLineAnimation_NonActive {
+  0% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: calc(50% - 2px);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 0;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+/*
+ * STYLES
+ */
+/* line 73, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button {
   position: absolute;
   cursor: pointer;
@@ -335,15 +801,10 @@ body[data-left-menu-is-active="true"] .mastframe {
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-/* line 13, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 81, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button .middle-line,
 .left-menu-button .top-line,
 .left-menu-button .bottom-line {
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  -webkit-transition: all 0.4s ease;
-  -webkit-transition-delay: 0s;
-  transition: all 0.4s ease 0s;
   position: absolute;
   height: 4px;
   background-color: #f5f5f5;
@@ -352,81 +813,118 @@ body[data-left-menu-is-active="true"] .mastframe {
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
-/* line 22, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 90, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button .middle-line {
   top: calc(50% - 2px);
   left: 0;
   right: 100%;
 }
-/* line 27, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 95, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button .top-line,
 .left-menu-button .bottom-line {
   right: 15%;
   left: 15%;
 }
-/* line 32, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 100, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button .top-line {
   top: 0;
+  -moz-animation-name: menuTopLineAnimation_NonActive;
+  -webkit-animation-name: menuTopLineAnimation_NonActive;
+  animation-name: menuTopLineAnimation_NonActive;
+  -moz-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -moz-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
-/* line 35, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 108, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button .bottom-line {
   bottom: 0;
+  -moz-animation-name: menuBottomLineAnimation_NonActive;
+  -webkit-animation-name: menuBottomLineAnimation_NonActive;
+  animation-name: menuBottomLineAnimation_NonActive;
+  -moz-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -moz-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
-/*.left-menu-button:hover {
+    /*.left-menu-button:hover {
     .middle-line {
         right: 0;
         left: 25%;
     }
 }*/
-/* line 48, ../scss/sections/mastframe/_left-menu-button.scss */
-.left-menu-button:hover {
-  /* .middle-line {
-      left: 25%;
-      right: 0%;
-  }*/
-}
-/* line 53, ../scss/sections/mastframe/_left-menu-button.scss */
-.left-menu-button:hover .top-line {
-  -moz-transform: rotate(-30.5deg);
-  -ms-transform: rotate(-30.5deg);
-  -webkit-transform: rotate(-30.5deg);
-  transform: rotate(-30.5deg);
-}
-/* line 56, ../scss/sections/mastframe/_left-menu-button.scss */
-.left-menu-button:hover .bottom-line {
-  -moz-transform: rotate(30.5deg);
-  -ms-transform: rotate(30.5deg);
-  -webkit-transform: rotate(30.5deg);
-  transform: rotate(30.5deg);
-}
-/* line 59, ../scss/sections/mastframe/_left-menu-button.scss */
-.left-menu-button:hover .top-line,
-.left-menu-button:hover .bottom-line {
-  right: 30%;
-  left: 0;
-}
+    /* .left-menu-button:hover {
 
-/* line 67, ../scss/sections/mastframe/_left-menu-button.scss */
+        .top-line {
+            @include transform(rotate(-30.5deg));
+        }
+        .bottom-line {
+            @include transform(rotate(30.5deg));
+        }
+        .top-line,
+        .bottom-line {
+            right: 30%;
+            left: 0;
+        }
+    } */
+/* line 139, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-left-menu-is-active="true"].left-menu-button .top-line,
 [data-left-menu-is-active="true"].left-menu-button .bottom-line {
-  top: calc(50% - 2px);
   left: 15%;
   right: 15%;
 }
-/* line 73, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 144, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-left-menu-is-active="true"].left-menu-button .top-line {
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -moz-animation-name: menuTopLineAnimation_Active;
+  -webkit-animation-name: menuTopLineAnimation_Active;
+  animation-name: menuTopLineAnimation_Active;
+  -moz-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -moz-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
-/* line 76, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 151, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-left-menu-is-active="true"].left-menu-button .bottom-line {
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -moz-animation-name: menuBottomLineAnimation_Active;
+  -webkit-animation-name: menuBottomLineAnimation_Active;
+  animation-name: menuBottomLineAnimation_Active;
+  -moz-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -moz-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
