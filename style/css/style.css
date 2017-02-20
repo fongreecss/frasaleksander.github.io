@@ -194,9 +194,9 @@ body[data-left-menu-is-active="true"] .mastframe {
 /* line 1, ../scss/sections/mastframe/_mastframe-left-panel.scss */
 .mastframe-left-panel {
   position: absolute;
-  top: 48px;
-  bottom: 48px;
-  left: 56px;
+  top: 4vh;
+  bottom: 4vh;
+  left: 3.5vw;
   width: 58px;
 }
 
@@ -328,8 +328,8 @@ body[data-left-menu-is-active="true"] .mastframe {
   cursor: pointer;
   top: 50%;
   left: 0;
-  width: 48px;
-  height: 32px;
+  width: 58px;
+  height: 23.2px;
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
@@ -347,24 +347,28 @@ body[data-left-menu-is-active="true"] .mastframe {
   position: absolute;
   height: 4px;
   background-color: #f5f5f5;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
-/* line 21, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 22, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button .middle-line {
   top: calc(50% - 2px);
   left: 0;
-  right: 25%;
+  right: 100%;
 }
-/* line 26, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 27, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button .top-line,
 .left-menu-button .bottom-line {
-  right: 0;
-  left: 25%;
+  right: 15%;
+  left: 15%;
 }
-/* line 31, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 32, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button .top-line {
   top: 0;
 }
-/* line 34, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 35, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button .bottom-line {
   bottom: 0;
 }
@@ -375,19 +379,54 @@ body[data-left-menu-is-active="true"] .mastframe {
         left: 25%;
     }
 }*/
-/* line 49, ../scss/sections/mastframe/_left-menu-button.scss */
-.left-menu-button:hover .middle-line,
-[data-left-menu-is-active="true"].left-menu-button .middle-line {
-  left: 25%;
-  right: 0%;
+/* line 48, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button:hover {
+  /* .middle-line {
+      left: 25%;
+      right: 0%;
+  }*/
 }
 /* line 53, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button:hover .top-line {
+  -moz-transform: rotate(-30.5deg);
+  -ms-transform: rotate(-30.5deg);
+  -webkit-transform: rotate(-30.5deg);
+  transform: rotate(-30.5deg);
+}
+/* line 56, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button:hover .bottom-line {
+  -moz-transform: rotate(30.5deg);
+  -ms-transform: rotate(30.5deg);
+  -webkit-transform: rotate(30.5deg);
+  transform: rotate(30.5deg);
+}
+/* line 59, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button:hover .top-line,
-.left-menu-button:hover .bottom-line,
+.left-menu-button:hover .bottom-line {
+  right: 30%;
+  left: 0;
+}
+
+/* line 67, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-left-menu-is-active="true"].left-menu-button .top-line,
 [data-left-menu-is-active="true"].left-menu-button .bottom-line {
-  right: 25%;
-  left: 0;
+  top: calc(50% - 2px);
+  left: 15%;
+  right: 15%;
+}
+/* line 73, ../scss/sections/mastframe/_left-menu-button.scss */
+[data-left-menu-is-active="true"].left-menu-button .top-line {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 76, ../scss/sections/mastframe/_left-menu-button.scss */
+[data-left-menu-is-active="true"].left-menu-button .bottom-line {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=style.css.map */
