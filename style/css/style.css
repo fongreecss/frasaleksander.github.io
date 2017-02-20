@@ -114,6 +114,14 @@ a:visited {
   left: 0;
   font-size: 14px;
 }
+/* line 50, ../scss/navigation/_mastnav.scss */
+#mastnav .author-menu-footer-stuff span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
 
 /*
  * VARIABLES
