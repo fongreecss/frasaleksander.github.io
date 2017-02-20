@@ -7,11 +7,10 @@ window.$ = window.jQuery = require('jquery');
     leftMenuButton.on('click', function(e) {
         e.preventDefault();
         if (body.attr('data-left-menu-is-active') == "true") {
-            body.attr('data-left-menu-is-active', "false");
-            leftMenuButton.attr('data-left-menu-is-active', "false");
+            $([body[0], leftMenuButton[0]]).attr('data-left-menu-is-active', "false");
         } else {
-            body.attr('data-left-menu-is-active', "true");
-            leftMenuButton.attr('data-left-menu-is-active', "true");
+            $([body[0], leftMenuButton[0]]).attr('data-left-menu-is-active', "true");
+
         }
     });
 })();

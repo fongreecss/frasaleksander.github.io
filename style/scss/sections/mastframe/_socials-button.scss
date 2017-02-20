@@ -6,11 +6,10 @@
     @include inline-block();
     position: absolute;
     bottom: 0;
-    left: 0;
     @include transform-origin(0, 50%);
     @include transform(rotate(-90deg));
     font-size: 20px;
-    left: 24px;
+    left: 27px;
     &:after {
         position: absolute;
         content: "find me on social networks";
@@ -29,5 +28,5 @@
 }
 
 .mastframe-left-panel[data-text-color="white"] .socials-button {
-    color: #fff;
+    color: $white;
 }
