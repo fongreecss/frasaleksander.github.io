@@ -101,6 +101,20 @@ a:visited {
   width: 48px;
 }
 
+/* line 43, ../scss/navigation/_mastnav.scss */
+#mastnav .author-menu-footer-stuff {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  bottom: 5vh;
+  padding-left: 5vh;
+  left: 0;
+  font-size: 14px;
+}
+
 /*
  * VARIABLES
  */

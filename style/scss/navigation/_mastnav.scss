@@ -39,3 +39,12 @@
         }
     }
 }
+
+#mastnav .author-menu-footer-stuff {
+    position: absolute;
+    @include inline-block();
+    bottom: 5vh;
+    padding-left: 5vh;
+    left: 0;
+    font-size: 14px;
+}
