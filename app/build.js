@@ -1,20 +1,42 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 window.$ = window.jQuery = require('jquery');
+window.App = {};
 
 (function() {
     var leftMenuButton = $('.left-menu-button');
     var body = $('body');
+    var _window = $(window);
+
+    var setIsLeftMenuActive = function(isLeftMenuActive) {
+        if (typeof isLeftMenuActive != "undefined" && isLeftMenuActive == false) {
+            $([body[0], leftMenuButton[0]]).attr('data-is-left-menu-active', "false");
+            return;
+        }
+        if (body.attr('data-is-left-menu-active') == "true") {
+            $([body[0], leftMenuButton[0]]).attr('data-is-left-menu-active', "false");
+        } else {
+            $([body[0], leftMenuButton[0]]).attr('data-is-left-menu-active', "true");
+        }
+    };
 
     leftMenuButton.on('click', function(e) {
         e.preventDefault();
-        if (body.attr('data-left-menu-is-active') == "true") {
-            $([body[0], leftMenuButton[0]]).attr('data-left-menu-is-active', "false");
-        } else {
-            $([body[0], leftMenuButton[0]]).attr('data-left-menu-is-active', "true");
+        setIsLeftMenuActive();
+    });
 
-        }
+    _window.on('load', function() {
+        setIsLeftMenuActive(false);
     });
 })();
+
+
+(function($) {
+    App.element = $('#app');
+    App.isLeftMenuActive = function() {
+        return App.element.attr('data-is-left-menu-active') == "true" ? "true" : "false";
+    }
+
+})(window.jQuery);
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.1.1

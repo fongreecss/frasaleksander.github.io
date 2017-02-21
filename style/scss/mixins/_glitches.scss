@@ -1,160 +1,78 @@
-@mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2) {
-    @if $textColor !='' {
-        color: $textColor;
-    }
+.glitch {
     position: relative;
-    $steps: $intensity;
-    // Ensure the @keyframes are generated at the root level
-    @at-root {
-        // We need two different ones
-        @for $i from 1 through 2 {
-            @keyframes #{$name}-anim-#{$i} {
-                @for $i from 0 through $steps {
-                    #{percentage($i*(1/$steps))} {
-                        clip: rect(random(300)+px, 9999px, random(300)+px, 0);
-                    }
-                }
-            }
-        }
-    }
+    color: white;
+    mix-blend-mode: lighten;
     &:before,
     &:after {
         content: attr(data-text);
         position: absolute;
         top: 0;
-        left: 0;
         width: 100%;
-        background: $background;
+        background: black;
         clip: rect(0, 0, 0, 0);
-    }
-    &:after {
-        left: 2px;
-        text-shadow: -1px 0 $highlightColor1;
-        animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
     }
     &:before {
-        left: -2px;
-        text-shadow: 2px 0 $highlightColor2;
-        animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
+        left: -1px;
+        text-shadow: 1px 0 rgba(red, 0.7);
     }
-}
-
-@mixin imgGlitch($name, $intensity, $width, $height, $top, $left) {
-    $steps: $intensity;
-    // Ensure the @keyframes are generated at the root level
-    @at-root {
-        // We need two different ones
-        @for $i from 1 through 2 {
-            @keyframes #{$name}-anim-#{$i} {
-                @for $i from 0 through $steps {
-                    #{percentage($i*(1/$steps))} {
-                        clip: rect( random($height)+px, $width+px, random($height)+px, 0);
-                    }
-                }
-            }
+    &:after {
+        left: 1px;
+        text-shadow: -1px 0 rgba(blue, 0.7);
+    }
+    &:hover {
+        &:before {
+            text-shadow: 4px 0 rgba(red, 0.7);
+            animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
         }
-    }
-    >img {
-        position: absolute;
-        top: $top+px;
-        left: $left+px;
-    }
-    >img:nth-child(2),
-    >img:nth-child(3) {
-        clip: rect(0, 0, 0, 0);
-    }
-    >img:nth-child(2) {
-        left: ($left + 2) + px;
-        animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
-    }
-    >img:nth-child(3) {
-        left: ($left - 2) + px;
-        animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
-    }
-}
-
-@mixin svgGlitch($name, $intensity, $fillColor, $background, $fillHighlight1, $fillHighlight2, $width, $height, $top, $left) {
-    $steps: $intensity;
-    // Ensure the @keyframes are generated at the root level
-    @at-root {
-        // We need two different ones
-        @for $i from 1 through 2 {
-            @keyframes #{$name}-anim-#{$i} {
-                @for $i from 0 through $steps {
-                    #{percentage($i*(1/$steps))} {
-                        clip: rect( (random($height)-20)+px, $width+px, (random($height)+20)+px, 0);
-                    }
-                }
-            }
-        }
-    }
-    svg {
-        position: absolute;
-        top: $top+px;
-        left: $left+px;
-        fill: $fillColor;
-        background: $background;
-        width: $width+px;
-        height: $height+px;
-    }
-    svg:nth-child(2),
-    svg:nth-child(3) {
-        clip: rect(0, 0, 0, 0);
-    }
-    svg:nth-child(2) {
-        fill: $fillHighlight1;
-        left: ($left - 2) + px;
-        animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
-    }
-    svg:nth-child(3) {
-        fill: $fillHighlight2;
-        left: ($left + 2) + px;
-        animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
-    }
-}
-
-@include keyframes(noise-anim) {
-    $steps: 20;
-    @for $i from 0 through $steps {
-        #{percentage($i*(1/$steps))} {
-            clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+        &:after {
+            text-shadow: -5px 0 rgba(blue, 0.7);
+            animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
         }
     }
 }
 
-.glitch:after {
-    content: attr(data-text);
-    position: absolute;
-    left: 2px;
-    text-shadow: -1px 0 red;
-    top: 0;
-    color: #231f20;
-    background: black;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
-    @include animation-name(noise-anim);
-    @include animation-duration(2s);
-    animation: noise-anim 2s infinite linear alternate-reverse;
-}
-
-@keyframes noise-anim-2 {
-    $steps: 20;
-    @for $i from 0 through $steps {
-        #{percentage($i*(1/$steps))} {
-            clip: rect(random(100)+px, 9999px, random(100)+px, 0);
-        }
+@keyframes glitch-loop-1 {
+    0% {
+        clip: rect(36px, 9999px, 9px, 0)
+    }
+    25% {
+        clip: rect(25px, 9999px, 99px, 0)
+    }
+    50% {
+        clip: rect(50px, 9999px, 102px, 0)
+    }
+    75% {
+        clip: rect(30px, 9999px, 92px, 0)
+    }
+    100% {
+        clip: rect(91px, 9999px, 98px, 0)
     }
 }
 
-.glitch:before {
-    content: attr(data-text);
-    position: absolute;
-    left: -2px;
-    text-shadow: 1px 0 blue;
-    top: 0;
-    color: white;
-    background: black;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-anim-2 3s infinite linear alternate-reverse;
+@keyframes glitch-loop-2 {
+    0% {
+        top: -1px;
+        left: 1px;
+        clip: rect(65px, 9999px, 119px, 0)
+    }
+    25% {
+        top: -6px;
+        left: 4px;
+        clip: rect(79px, 9999px, 19px, 0)
+    }
+    50% {
+        top: -3px;
+        left: 2px;
+        clip: rect(68px, 9999px, 11px, 0)
+    }
+    75% {
+        top: 0px;
+        left: -4px;
+        clip: rect(95px, 9999px, 53px, 0)
+    }
+    100% {
+        top: -1px;
+        left: -1px;
+        clip: rect(31px, 9999px, 149px, 0)
+    }
 }

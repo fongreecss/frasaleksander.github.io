@@ -1,8 +1,9 @@
     $left-menu-button-line-height:4;
     $left-menu-button-width:58;
     $left-menu-button-height: $left-menu-button-width*2/5;
-    $left-menu-button-line-color:$white;
+    $left-menu-button-line-color:$dark-gray;
     $left-menu-button-animation-duration: 0.4s;
+    $left-menu-button-animation-timing-function:cubic-bezier(.2, 0, .7, 1);
     /*
      * ANIMATIONS
      */
@@ -70,89 +71,61 @@
      * STYLES
      */
     
+    .left-menu-button[data-is-left-menu-active="false"],
+    .left-menu-button[data-is-left-menu-active="true"],
     .left-menu-button {
         position: absolute;
         cursor: pointer;
         top: 50%;
         left: 0;
         width: $left-menu-button-width + px;
-        height: $left-menu-button-height + px;
+        height: $left-menu-button-width + px;
         @include transform(translate(0, -50%));
-        .middle-line,
         .top-line,
         .bottom-line {
-            //@include transition(all 0.4s ease 0s);
             position: absolute;
             height: $left-menu-button-line-height + px;
             background-color: $left-menu-button-line-color;
             @include transform-origin(50%, 50%);
+            right: 15%;
+            left: 15%;
         }
-        .middle-line {
+        .top-line {
             top: calc(50% - 2px);
-            left: 0;
-            right: 100%;
-        }
-        .top-line,
-        .bottom-line {
-            right: 15%;
-            left: 15%;
-        }
-        .top-line {
-            top: 0;
-            @include animation-name(menuTopLineAnimation_NonActive);
-            @include animation-duration($left-menu-button-animation-duration);
-            @include animation-timing-function(cubic-bezier(.2, 0, .7, 1));
-            @include animation-iteration-count(1);
-            @include animation-fill-mode(forwards);
+            @include transition(top 0.4s $left-menu-button-animation-timing-function 0s);
         }
         .bottom-line {
-            bottom: 0;
-            @include animation-name(menuBottomLineAnimation_NonActive);
-            @include animation-duration($left-menu-button-animation-duration);
-            @include animation-timing-function(cubic-bezier(.2, 0, .7, 1));
-            @include animation-iteration-count(1);
-            @include animation-fill-mode(forwards);
+            bottom: calc(50% - 2px);
+            @include transition(bottom 0.4s $left-menu-button-animation-timing-function 0s);
         }
     }
-    /*.left-menu-button:hover {
-    .middle-line {
-        right: 0;
-        left: 25%;
-    }
-}*/
-    /* .left-menu-button:hover {
-
-        .top-line {
-            @include transform(rotate(-30.5deg));
-        }
-        .bottom-line {
-            @include transform(rotate(30.5deg));
-        }
-        .top-line,
-        .bottom-line {
-            right: 30%;
-            left: 0;
-        }
-    } */
     
-    [data-left-menu-is-active="true"].left-menu-button {
-        .top-line,
-        .bottom-line {
-            left: 15%;
-            right: 15%;
-        }
+    .left-menu-button[data-is-left-menu-active="false"] {
         .top-line {
-            @include animation-name(menuTopLineAnimation_Active);
-            @include animation-duration($left-menu-button-animation-duration);
-            @include animation-timing-function(cubic-bezier(.2, 0, .7, 1));
-            @include animation-iteration-count(1);
-            @include animation-fill-mode(forwards);
+            top: 27%;
+            @include transition(transform 0.2s $left-menu-button-animation-timing-function 0s, top 0.2s $left-menu-button-animation-timing-function 0.4s);
         }
         .bottom-line {
-            @include animation-name(menuBottomLineAnimation_Active);
+            bottom: 27%;
+            @include transition(transform 0.2s $left-menu-button-animation-timing-function 0s, bottom 0.2s $left-menu-button-animation-timing-function 0.4s);
+        }
+    }
+    
+    .left-menu-button[data-is-left-menu-active="true"] {
+        //height: $left-menu-button-height*5/2 + px;
+        .top-line {
+            top: calc(50% - 2px);
+            @include transform(rotate(-40deg));
+            @include transition(top 0.2s $left-menu-button-animation-timing-function 0s, transform 0.2s $left-menu-button-animation-timing-function 0.4s);
+        }
+        .bottom-line {
+            bottom: calc(50% - 2px);
+            @include transform(rotate(40deg));
+            @include transition(bottom 0.2s $left-menu-button-animation-timing-function 0s, transform 0.2s $left-menu-button-animation-timing-function 0.4s);
+            /*@include animation-name(menuBottomLineAnimation_Active);
             @include animation-duration($left-menu-button-animation-duration);
-            @include animation-timing-function(cubic-bezier(.2, 0, .7, 1));
+            @include animation-timing-function($left-menu-button-animation-timing-function);
             @include animation-iteration-count(1);
-            @include animation-fill-mode(forwards);
+            @include animation-fill-mode(forwards);*/
         }
     }

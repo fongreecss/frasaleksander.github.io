@@ -1,427 +1,123 @@
-@-webkit-keyframes noise-anim {
-  0% {
-    clip: rect(48px, 9999px, 97px, 0);
-  }
-  5% {
-    clip: rect(44px, 9999px, 55px, 0);
-  }
-  10% {
-    clip: rect(88px, 9999px, 80px, 0);
-  }
-  15% {
-    clip: rect(18px, 9999px, 80px, 0);
-  }
-  20% {
-    clip: rect(91px, 9999px, 33px, 0);
-  }
-  25% {
-    clip: rect(35px, 9999px, 91px, 0);
-  }
-  30% {
-    clip: rect(42px, 9999px, 39px, 0);
-  }
-  35% {
-    clip: rect(64px, 9999px, 9px, 0);
-  }
-  40% {
-    clip: rect(29px, 9999px, 97px, 0);
-  }
-  45% {
-    clip: rect(97px, 9999px, 40px, 0);
-  }
-  50% {
-    clip: rect(51px, 9999px, 91px, 0);
-  }
-  55% {
-    clip: rect(39px, 9999px, 1px, 0);
-  }
-  60% {
-    clip: rect(22px, 9999px, 83px, 0);
-  }
-  65% {
-    clip: rect(2px, 9999px, 20px, 0);
-  }
-  70% {
-    clip: rect(78px, 9999px, 65px, 0);
-  }
-  75% {
-    clip: rect(5px, 9999px, 26px, 0);
-  }
-  80% {
-    clip: rect(86px, 9999px, 8px, 0);
-  }
-  85% {
-    clip: rect(93px, 9999px, 7px, 0);
-  }
-  90% {
-    clip: rect(31px, 9999px, 34px, 0);
-  }
-  95% {
-    clip: rect(61px, 9999px, 79px, 0);
-  }
-  100% {
-    clip: rect(68px, 9999px, 52px, 0);
-  }
-}
-@-moz-keyframes noise-anim {
-  0% {
-    clip: rect(79px, 9999px, 35px, 0);
-  }
-  5% {
-    clip: rect(40px, 9999px, 32px, 0);
-  }
-  10% {
-    clip: rect(54px, 9999px, 97px, 0);
-  }
-  15% {
-    clip: rect(23px, 9999px, 18px, 0);
-  }
-  20% {
-    clip: rect(64px, 9999px, 60px, 0);
-  }
-  25% {
-    clip: rect(74px, 9999px, 90px, 0);
-  }
-  30% {
-    clip: rect(50px, 9999px, 78px, 0);
-  }
-  35% {
-    clip: rect(18px, 9999px, 99px, 0);
-  }
-  40% {
-    clip: rect(11px, 9999px, 95px, 0);
-  }
-  45% {
-    clip: rect(52px, 9999px, 29px, 0);
-  }
-  50% {
-    clip: rect(8px, 9999px, 39px, 0);
-  }
-  55% {
-    clip: rect(12px, 9999px, 27px, 0);
-  }
-  60% {
-    clip: rect(51px, 9999px, 32px, 0);
-  }
-  65% {
-    clip: rect(47px, 9999px, 79px, 0);
-  }
-  70% {
-    clip: rect(31px, 9999px, 94px, 0);
-  }
-  75% {
-    clip: rect(14px, 9999px, 98px, 0);
-  }
-  80% {
-    clip: rect(99px, 9999px, 18px, 0);
-  }
-  85% {
-    clip: rect(9px, 9999px, 59px, 0);
-  }
-  90% {
-    clip: rect(70px, 9999px, 94px, 0);
-  }
-  95% {
-    clip: rect(81px, 9999px, 75px, 0);
-  }
-  100% {
-    clip: rect(43px, 9999px, 27px, 0);
-  }
-}
-@-ms-keyframes noise-anim {
-  0% {
-    clip: rect(89px, 9999px, 71px, 0);
-  }
-  5% {
-    clip: rect(44px, 9999px, 6px, 0);
-  }
-  10% {
-    clip: rect(16px, 9999px, 38px, 0);
-  }
-  15% {
-    clip: rect(48px, 9999px, 43px, 0);
-  }
-  20% {
-    clip: rect(57px, 9999px, 88px, 0);
-  }
-  25% {
-    clip: rect(60px, 9999px, 94px, 0);
-  }
-  30% {
-    clip: rect(58px, 9999px, 56px, 0);
-  }
-  35% {
-    clip: rect(72px, 9999px, 77px, 0);
-  }
-  40% {
-    clip: rect(47px, 9999px, 6px, 0);
-  }
-  45% {
-    clip: rect(23px, 9999px, 95px, 0);
-  }
-  50% {
-    clip: rect(29px, 9999px, 69px, 0);
-  }
-  55% {
-    clip: rect(3px, 9999px, 59px, 0);
-  }
-  60% {
-    clip: rect(73px, 9999px, 76px, 0);
-  }
-  65% {
-    clip: rect(82px, 9999px, 88px, 0);
-  }
-  70% {
-    clip: rect(74px, 9999px, 47px, 0);
-  }
-  75% {
-    clip: rect(14px, 9999px, 52px, 0);
-  }
-  80% {
-    clip: rect(95px, 9999px, 87px, 0);
-  }
-  85% {
-    clip: rect(40px, 9999px, 93px, 0);
-  }
-  90% {
-    clip: rect(17px, 9999px, 40px, 0);
-  }
-  95% {
-    clip: rect(22px, 9999px, 62px, 0);
-  }
-  100% {
-    clip: rect(4px, 9999px, 68px, 0);
-  }
-}
-@-o-keyframes noise-anim {
-  0% {
-    clip: rect(77px, 9999px, 10px, 0);
-  }
-  5% {
-    clip: rect(73px, 9999px, 19px, 0);
-  }
-  10% {
-    clip: rect(74px, 9999px, 1px, 0);
-  }
-  15% {
-    clip: rect(69px, 9999px, 91px, 0);
-  }
-  20% {
-    clip: rect(18px, 9999px, 98px, 0);
-  }
-  25% {
-    clip: rect(73px, 9999px, 11px, 0);
-  }
-  30% {
-    clip: rect(17px, 9999px, 3px, 0);
-  }
-  35% {
-    clip: rect(28px, 9999px, 59px, 0);
-  }
-  40% {
-    clip: rect(10px, 9999px, 70px, 0);
-  }
-  45% {
-    clip: rect(43px, 9999px, 6px, 0);
-  }
-  50% {
-    clip: rect(63px, 9999px, 90px, 0);
-  }
-  55% {
-    clip: rect(99px, 9999px, 47px, 0);
-  }
-  60% {
-    clip: rect(69px, 9999px, 36px, 0);
-  }
-  65% {
-    clip: rect(62px, 9999px, 41px, 0);
-  }
-  70% {
-    clip: rect(98px, 9999px, 88px, 0);
-  }
-  75% {
-    clip: rect(91px, 9999px, 99px, 0);
-  }
-  80% {
-    clip: rect(19px, 9999px, 89px, 0);
-  }
-  85% {
-    clip: rect(22px, 9999px, 63px, 0);
-  }
-  90% {
-    clip: rect(8px, 9999px, 7px, 0);
-  }
-  95% {
-    clip: rect(24px, 9999px, 41px, 0);
-  }
-  100% {
-    clip: rect(12px, 9999px, 95px, 0);
-  }
-}
-@keyframes noise-anim {
-  0% {
-    clip: rect(7px, 9999px, 75px, 0);
-  }
-  5% {
-    clip: rect(59px, 9999px, 17px, 0);
-  }
-  10% {
-    clip: rect(21px, 9999px, 60px, 0);
-  }
-  15% {
-    clip: rect(14px, 9999px, 80px, 0);
-  }
-  20% {
-    clip: rect(67px, 9999px, 93px, 0);
-  }
-  25% {
-    clip: rect(6px, 9999px, 100px, 0);
-  }
-  30% {
-    clip: rect(67px, 9999px, 84px, 0);
-  }
-  35% {
-    clip: rect(67px, 9999px, 64px, 0);
-  }
-  40% {
-    clip: rect(17px, 9999px, 26px, 0);
-  }
-  45% {
-    clip: rect(88px, 9999px, 75px, 0);
-  }
-  50% {
-    clip: rect(50px, 9999px, 32px, 0);
-  }
-  55% {
-    clip: rect(71px, 9999px, 45px, 0);
-  }
-  60% {
-    clip: rect(10px, 9999px, 44px, 0);
-  }
-  65% {
-    clip: rect(36px, 9999px, 40px, 0);
-  }
-  70% {
-    clip: rect(31px, 9999px, 80px, 0);
-  }
-  75% {
-    clip: rect(59px, 9999px, 98px, 0);
-  }
-  80% {
-    clip: rect(8px, 9999px, 40px, 0);
-  }
-  85% {
-    clip: rect(76px, 9999px, 100px, 0);
-  }
-  90% {
-    clip: rect(40px, 9999px, 15px, 0);
-  }
-  95% {
-    clip: rect(65px, 9999px, 95px, 0);
-  }
-  100% {
-    clip: rect(59px, 9999px, 52px, 0);
-  }
-}
-/* line 125, ../scss/mixins/_glitches.scss */
-.glitch:after {
-  content: attr(data-text);
-  position: absolute;
-  left: 2px;
-  text-shadow: -1px 0 red;
-  top: 0;
-  color: #231f20;
-  background: black;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  -moz-animation-name: noise-anim;
-  -webkit-animation-name: noise-anim;
-  animation-name: noise-anim;
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  animation: noise-anim 2s infinite linear alternate-reverse;
-}
-
-@keyframes noise-anim-2 {
-  0% {
-    clip: rect(60px, 9999px, 88px, 0);
-  }
-  5% {
-    clip: rect(36px, 9999px, 39px, 0);
-  }
-  10% {
-    clip: rect(69px, 9999px, 12px, 0);
-  }
-  15% {
-    clip: rect(37px, 9999px, 90px, 0);
-  }
-  20% {
-    clip: rect(20px, 9999px, 42px, 0);
-  }
-  25% {
-    clip: rect(62px, 9999px, 78px, 0);
-  }
-  30% {
-    clip: rect(88px, 9999px, 51px, 0);
-  }
-  35% {
-    clip: rect(59px, 9999px, 51px, 0);
-  }
-  40% {
-    clip: rect(35px, 9999px, 35px, 0);
-  }
-  45% {
-    clip: rect(66px, 9999px, 25px, 0);
-  }
-  50% {
-    clip: rect(47px, 9999px, 8px, 0);
-  }
-  55% {
-    clip: rect(38px, 9999px, 98px, 0);
-  }
-  60% {
-    clip: rect(21px, 9999px, 100px, 0);
-  }
-  65% {
-    clip: rect(24px, 9999px, 3px, 0);
-  }
-  70% {
-    clip: rect(64px, 9999px, 99px, 0);
-  }
-  75% {
-    clip: rect(63px, 9999px, 36px, 0);
-  }
-  80% {
-    clip: rect(38px, 9999px, 91px, 0);
-  }
-  85% {
-    clip: rect(40px, 9999px, 90px, 0);
-  }
-  90% {
-    clip: rect(14px, 9999px, 15px, 0);
-  }
-  95% {
-    clip: rect(64px, 9999px, 78px, 0);
-  }
-  100% {
-    clip: rect(6px, 9999px, 50px, 0);
-  }
-}
-/* line 149, ../scss/mixins/_glitches.scss */
-.glitch:before {
-  content: attr(data-text);
-  position: absolute;
-  left: -2px;
-  text-shadow: 1px 0 blue;
-  top: 0;
+/* line 1, ../scss/mixins/_glitches.scss */
+.glitch {
+  position: relative;
   color: white;
+  mix-blend-mode: lighten;
+}
+/* line 5, ../scss/mixins/_glitches.scss */
+.glitch:before, .glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  width: 100%;
   background: black;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim-2 3s infinite linear alternate-reverse;
+  clip: rect(0, 0, 0, 0);
+}
+/* line 14, ../scss/mixins/_glitches.scss */
+.glitch:before {
+  left: -1px;
+  text-shadow: 1px 0 rgba(255, 0, 0, 0.7);
+}
+/* line 18, ../scss/mixins/_glitches.scss */
+.glitch:after {
+  left: 1px;
+  text-shadow: -1px 0 rgba(0, 0, 255, 0.7);
+}
+/* line 23, ../scss/mixins/_glitches.scss */
+.glitch:hover:before {
+  text-shadow: 4px 0 rgba(255, 0, 0, 0.7);
+  animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
+}
+/* line 27, ../scss/mixins/_glitches.scss */
+.glitch:hover:after {
+  text-shadow: -5px 0 rgba(0, 0, 255, 0.7);
+  animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
 }
 
+@keyframes glitch-loop-1 {
+  0% {
+    clip: rect(36px, 9999px, 9px, 0);
+  }
+  25% {
+    clip: rect(25px, 9999px, 99px, 0);
+  }
+  50% {
+    clip: rect(50px, 9999px, 102px, 0);
+  }
+  75% {
+    clip: rect(30px, 9999px, 92px, 0);
+  }
+  100% {
+    clip: rect(91px, 9999px, 98px, 0);
+  }
+}
+@keyframes glitch-loop-2 {
+  0% {
+    top: -1px;
+    left: 1px;
+    clip: rect(65px, 9999px, 119px, 0);
+  }
+  25% {
+    top: -6px;
+    left: 4px;
+    clip: rect(79px, 9999px, 19px, 0);
+  }
+  50% {
+    top: -3px;
+    left: 2px;
+    clip: rect(68px, 9999px, 11px, 0);
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+    clip: rect(95px, 9999px, 53px, 0);
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    clip: rect(31px, 9999px, 149px, 0);
+  }
+}
+@-webkit-keyframes resizebgimage {
+  0% {
+    background-size: auto 100%;
+  }
+  100% {
+    background-size: auto 107%;
+  }
+}
+@-moz-keyframes resizebgimage {
+  0% {
+    background-size: auto 100%;
+  }
+  100% {
+    background-size: auto 107%;
+  }
+}
+@-ms-keyframes resizebgimage {
+  0% {
+    background-size: auto 100%;
+  }
+  100% {
+    background-size: auto 107%;
+  }
+}
+@-o-keyframes resizebgimage {
+  0% {
+    background-size: auto 100%;
+  }
+  100% {
+    background-size: auto 107%;
+  }
+}
+@keyframes resizebgimage {
+  0% {
+    background-size: auto 100%;
+  }
+  100% {
+    background-size: auto 107%;
+  }
+}
 /*
  * Navigation
  */
@@ -540,7 +236,7 @@ a:visited {
   bottom: 5vh;
   padding-left: 5vh;
   left: 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 /* line 54, ../scss/navigation/_mastnav.scss */
 #mastnav .author-menu-footer-stuff span {
@@ -551,53 +247,273 @@ a:visited {
   *display: inline;
 }
 
+@-webkit-keyframes textGlitch_before {
+  0% {
+    top: 0px;
+    left: 1px;
+  }
+  25% {
+    top: 4px;
+    left: -1px;
+  }
+  50% {
+    top: 4px;
+    left: 1px;
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+  }
+  100% {
+    top: -2px;
+    left: 1px;
+  }
+}
+@-moz-keyframes textGlitch_before {
+  0% {
+    top: 0px;
+    left: 1px;
+  }
+  25% {
+    top: 4px;
+    left: -1px;
+  }
+  50% {
+    top: 4px;
+    left: 1px;
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+  }
+  100% {
+    top: -2px;
+    left: 1px;
+  }
+}
+@-ms-keyframes textGlitch_before {
+  0% {
+    top: 0px;
+    left: 1px;
+  }
+  25% {
+    top: 4px;
+    left: -1px;
+  }
+  50% {
+    top: 4px;
+    left: 1px;
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+  }
+  100% {
+    top: -2px;
+    left: 1px;
+  }
+}
+@-o-keyframes textGlitch_before {
+  0% {
+    top: 0px;
+    left: 1px;
+  }
+  25% {
+    top: 4px;
+    left: -1px;
+  }
+  50% {
+    top: 4px;
+    left: 1px;
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+  }
+  100% {
+    top: -2px;
+    left: 1px;
+  }
+}
+@keyframes textGlitch_before {
+  0% {
+    top: 0px;
+    left: 1px;
+  }
+  25% {
+    top: 4px;
+    left: -1px;
+  }
+  50% {
+    top: 4px;
+    left: 1px;
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+  }
+  100% {
+    top: -2px;
+    left: 1px;
+  }
+}
+@-webkit-keyframes textGlitch_after {
+  0% {
+    top: 2px;
+    left: 1px;
+  }
+  25% {
+    top: 0px;
+    left: -2px;
+  }
+  50% {
+    top: 2px;
+    left: -1px;
+  }
+  75% {
+    top: 0;
+    left: 2px;
+  }
+  100% {
+    top: 2px;
+    left: 1px;
+  }
+}
+@-moz-keyframes textGlitch_after {
+  0% {
+    top: 2px;
+    left: 1px;
+  }
+  25% {
+    top: 0px;
+    left: -2px;
+  }
+  50% {
+    top: 2px;
+    left: -1px;
+  }
+  75% {
+    top: 0;
+    left: 2px;
+  }
+  100% {
+    top: 2px;
+    left: 1px;
+  }
+}
+@-ms-keyframes textGlitch_after {
+  0% {
+    top: 2px;
+    left: 1px;
+  }
+  25% {
+    top: 0px;
+    left: -2px;
+  }
+  50% {
+    top: 2px;
+    left: -1px;
+  }
+  75% {
+    top: 0;
+    left: 2px;
+  }
+  100% {
+    top: 2px;
+    left: 1px;
+  }
+}
+@-o-keyframes textGlitch_after {
+  0% {
+    top: 2px;
+    left: 1px;
+  }
+  25% {
+    top: 0px;
+    left: -2px;
+  }
+  50% {
+    top: 2px;
+    left: -1px;
+  }
+  75% {
+    top: 0;
+    left: 2px;
+  }
+  100% {
+    top: 2px;
+    left: 1px;
+  }
+}
+@keyframes textGlitch_after {
+  0% {
+    top: 2px;
+    left: 1px;
+  }
+  25% {
+    top: 0px;
+    left: -2px;
+  }
+  50% {
+    top: 2px;
+    left: -1px;
+  }
+  75% {
+    top: 0;
+    left: 2px;
+  }
+  100% {
+    top: 2px;
+    left: 1px;
+  }
+}
+/* line 106, ../scss/navigation/_mastnav.scss */
+[data-text]:hover:before {
+  content: attr(data-text);
+  white-space: nowrap;
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  z-index: -1;
+  color: #ff0099;
+  color: #0f94fc;
+  color: #bbb;
+  -moz-animation-name: textGlitch_before;
+  -webkit-animation-name: textGlitch_before;
+  animation-name: textGlitch_before;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -moz-animation-timing-function: step-end;
+  -webkit-animation-timing-function: step-end;
+  animation-timing-function: step-end;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+/* line 1, ../scss/sections/_main-sections.scss */
+.main-sections {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 /*
  * VARIABLES
  */
 /*
  * STYLE
  */
-@-webkit-keyframes resizebgimage {
-  0% {
-    background-size: auto 100%;
-  }
-  100% {
-    background-size: auto 107%;
-  }
-}
-@-moz-keyframes resizebgimage {
-  0% {
-    background-size: auto 100%;
-  }
-  100% {
-    background-size: auto 107%;
-  }
-}
-@-ms-keyframes resizebgimage {
-  0% {
-    background-size: auto 100%;
-  }
-  100% {
-    background-size: auto 107%;
-  }
-}
-@-o-keyframes resizebgimage {
-  0% {
-    background-size: auto 100%;
-  }
-  100% {
-    background-size: auto 107%;
-  }
-}
-@keyframes resizebgimage {
-  0% {
-    background-size: auto 100%;
-  }
-  100% {
-    background-size: auto 107%;
-  }
-}
-/* line 25, ../scss/sections/mastframe/_mastframe.scss */
+/* line 16, ../scss/sections/mastframe/_mastframe.scss */
 .mastframe {
   position: absolute;
   top: 0;
@@ -605,27 +521,7 @@ a:visited {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  background-image: url("https://frasaleksander.github.io/images/front/aleksanderfras-2.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  -moz-animation-name: resizebgimage;
-  -webkit-animation-name: resizebgimage;
-  animation-name: resizebgimage;
-  -moz-animation-duration: 14s;
-  -webkit-animation-duration: 14s;
-  animation-duration: 14s;
-  -moz-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  -webkit-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  background-color: #231f20;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease;
@@ -633,8 +529,8 @@ a:visited {
   transition: all 0.4s ease 0s;
 }
 
-/* line 49, ../scss/sections/mastframe/_mastframe.scss */
-body[data-left-menu-is-active="true"] .mastframe {
+/* line 29, ../scss/sections/mastframe/_mastframe.scss */
+body[data-is-left-menu-active="true"] .mastframe {
   top: 5vh;
   bottom: -5vh;
   left: 25vw;
@@ -758,6 +654,11 @@ body[data-left-menu-is-active="true"] .mastframe {
   color: #f5f5f5;
 }
 
+/* line 34, ../scss/sections/mastframe/_socials-button.scss */
+.mastframe-left-panel[data-text-color="dark-gray"] .socials-button {
+  color: #333;
+}
+
 /* line 1, ../scss/sections/mastframe/_site-logo.scss */
 .site-logo {
   font-style: italic;
@@ -770,6 +671,11 @@ body[data-left-menu-is-active="true"] .mastframe {
 /* line 9, ../scss/sections/mastframe/_site-logo.scss */
 .mastframe-left-panel[data-text-color="white"] .site-logo {
   color: #f5f5f5;
+}
+
+/* line 13, ../scss/sections/mastframe/_site-logo.scss */
+.mastframe-left-panel[data-text-color="dark-gray"] .site-logo {
+  color: #333;
 }
 
 /*
@@ -1238,137 +1144,332 @@ body[data-left-menu-is-active="true"] .mastframe {
 /*
  * STYLES
  */
-/* line 73, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 74, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button[data-is-left-menu-active="false"],
+.left-menu-button[data-is-left-menu-active="true"],
 .left-menu-button {
   position: absolute;
   cursor: pointer;
   top: 50%;
   left: 0;
   width: 58px;
-  height: 23.2px;
+  height: 58px;
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-/* line 81, ../scss/sections/mastframe/_left-menu-button.scss */
-.left-menu-button .middle-line,
+/* line 84, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button[data-is-left-menu-active="false"] .top-line,
+.left-menu-button[data-is-left-menu-active="false"] .bottom-line,
+.left-menu-button[data-is-left-menu-active="true"] .top-line,
+.left-menu-button[data-is-left-menu-active="true"] .bottom-line,
 .left-menu-button .top-line,
 .left-menu-button .bottom-line {
   position: absolute;
   height: 4px;
-  background-color: #f5f5f5;
+  background-color: #333;
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-}
-/* line 90, ../scss/sections/mastframe/_left-menu-button.scss */
-.left-menu-button .middle-line {
-  top: calc(50% - 2px);
-  left: 0;
-  right: 100%;
-}
-/* line 95, ../scss/sections/mastframe/_left-menu-button.scss */
-.left-menu-button .top-line,
-.left-menu-button .bottom-line {
   right: 15%;
   left: 15%;
 }
-/* line 100, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 93, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button[data-is-left-menu-active="false"] .top-line,
+.left-menu-button[data-is-left-menu-active="true"] .top-line,
 .left-menu-button .top-line {
-  top: 0;
-  -moz-animation-name: menuTopLineAnimation_NonActive;
-  -webkit-animation-name: menuTopLineAnimation_NonActive;
-  animation-name: menuTopLineAnimation_NonActive;
-  -moz-animation-duration: 0.4s;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
-  -moz-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  -webkit-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  top: calc(50% - 2px);
+  -moz-transition: top 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
+  -o-transition: top 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
+  -webkit-transition: top 0.4s cubic-bezier(0.2, 0, 0.7, 1);
+  -webkit-transition-delay: 0s;
+  transition: top 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
+}
+/* line 97, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button[data-is-left-menu-active="false"] .bottom-line,
+.left-menu-button[data-is-left-menu-active="true"] .bottom-line,
+.left-menu-button .bottom-line {
+  bottom: calc(50% - 2px);
+  -moz-transition: bottom 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
+  -o-transition: bottom 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
+  -webkit-transition: bottom 0.4s cubic-bezier(0.2, 0, 0.7, 1);
+  -webkit-transition-delay: 0s;
+  transition: bottom 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
+}
+
+/* line 104, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button[data-is-left-menu-active="false"] .top-line {
+  top: 27%;
+  -moz-transition: -moz-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
+  -o-transition: -o-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1), top 0.2s cubic-bezier(0.2, 0, 0.7, 1);
+  -webkit-transition-delay: 0s, 0.4s;
+  transition: transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
 }
 /* line 108, ../scss/sections/mastframe/_left-menu-button.scss */
-.left-menu-button .bottom-line {
-  bottom: 0;
-  -moz-animation-name: menuBottomLineAnimation_NonActive;
-  -webkit-animation-name: menuBottomLineAnimation_NonActive;
-  animation-name: menuBottomLineAnimation_NonActive;
-  -moz-animation-duration: 0.4s;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
-  -moz-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  -webkit-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+.left-menu-button[data-is-left-menu-active="false"] .bottom-line {
+  bottom: 27%;
+  -moz-transition: -moz-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
+  -o-transition: -o-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1), bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1);
+  -webkit-transition-delay: 0s, 0.4s;
+  transition: transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
 }
 
-    /*.left-menu-button:hover {
-    .middle-line {
-        right: 0;
-        left: 25%;
-    }
-}*/
-    /* .left-menu-button:hover {
+/* line 116, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button[data-is-left-menu-active="true"] .top-line {
+  top: calc(50% - 2px);
+  -moz-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  -moz-transition: top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, -moz-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
+  -o-transition: top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, -o-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
+  -webkit-transition: top 0.2s cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1);
+  -webkit-transition-delay: 0s, 0.4s;
+  transition: top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
+}
+/* line 121, ../scss/sections/mastframe/_left-menu-button.scss */
+.left-menu-button[data-is-left-menu-active="true"] .bottom-line {
+  bottom: calc(50% - 2px);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -moz-transition: bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, -moz-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
+  -o-transition: bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, -o-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
+  -webkit-transition: bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1);
+  -webkit-transition-delay: 0s, 0.4s;
+  transition: bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
+  /*@include animation-name(menuBottomLineAnimation_Active);
+  @include animation-duration($left-menu-button-animation-duration);
+  @include animation-timing-function($left-menu-button-animation-timing-function);
+  @include animation-iteration-count(1);
+  @include animation-fill-mode(forwards);*/
+}
 
-        .top-line {
-            @include transform(rotate(-30.5deg));
-        }
-        .bottom-line {
-            @include transform(rotate(30.5deg));
-        }
-        .top-line,
-        .bottom-line {
-            right: 30%;
-            left: 0;
-        }
-    } */
-/* line 139, ../scss/sections/mastframe/_left-menu-button.scss */
-[data-left-menu-is-active="true"].left-menu-button .top-line,
-[data-left-menu-is-active="true"].left-menu-button .bottom-line {
-  left: 15%;
-  right: 15%;
+/*
+ * VARIABLES
+ */
+/* line 6, ../scss/sections/about/_about.scss */
+.about-section {
+  background-color: #f5f5f5;
 }
-/* line 144, ../scss/sections/mastframe/_left-menu-button.scss */
-[data-left-menu-is-active="true"].left-menu-button .top-line {
-  -moz-animation-name: menuTopLineAnimation_Active;
-  -webkit-animation-name: menuTopLineAnimation_Active;
-  animation-name: menuTopLineAnimation_Active;
-  -moz-animation-duration: 0.4s;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
-  -moz-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  -webkit-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+
+@-webkit-keyframes aboutRightPanel_intro {
+  0% {
+    height: 30vh;
+    left: 0;
+    right: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  40%,
+    48% {
+    height: 100vh;
+    left: 0;
+    right: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
+    opacity: 0.33;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  100% {
+    height: 75vh;
+    left: 50%;
+    right: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
 }
-/* line 151, ../scss/sections/mastframe/_left-menu-button.scss */
-[data-left-menu-is-active="true"].left-menu-button .bottom-line {
-  -moz-animation-name: menuBottomLineAnimation_Active;
-  -webkit-animation-name: menuBottomLineAnimation_Active;
-  animation-name: menuBottomLineAnimation_Active;
-  -moz-animation-duration: 0.4s;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
-  -moz-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  -webkit-animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
-  animation-timing-function: cubic-bezier(0.2, 0, 0.7, 1);
+@-moz-keyframes aboutRightPanel_intro {
+  0% {
+    height: 30vh;
+    left: 0;
+    right: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  40%,
+    48% {
+    height: 100vh;
+    left: 0;
+    right: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
+    opacity: 0.33;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  100% {
+    height: 75vh;
+    left: 50%;
+    right: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
+@-ms-keyframes aboutRightPanel_intro {
+  0% {
+    height: 30vh;
+    left: 0;
+    right: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  40%,
+    48% {
+    height: 100vh;
+    left: 0;
+    right: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
+    opacity: 0.33;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  100% {
+    height: 75vh;
+    left: 50%;
+    right: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
+@-o-keyframes aboutRightPanel_intro {
+  0% {
+    height: 30vh;
+    left: 0;
+    right: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  40%,
+    48% {
+    height: 100vh;
+    left: 0;
+    right: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
+    opacity: 0.33;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  100% {
+    height: 75vh;
+    left: 50%;
+    right: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
+@keyframes aboutRightPanel_intro {
+  0% {
+    height: 30vh;
+    left: 0;
+    right: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  40%,
+    48% {
+    height: 100vh;
+    left: 0;
+    right: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
+    opacity: 0.33;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  100% {
+    height: 75vh;
+    left: 50%;
+    right: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
+/* line 26, ../scss/sections/about/_about-right-panel.scss */
+.about-right-panel {
+  position: absolute;
+  height: 60vh;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  overflow: hidden;
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background-image: url("https://frasaleksander.github.io/images/front/aleksanderfras-2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  /*@include animation-name(resizebgimage);
+  @include animation-duration(14s);
+  @include animation-timing-function(cubic-bezier(.2, 0, .7, 1));
+  @include animation-iteration-count(1);
+  @include animation-fill-mode(forwards);*/
+  -moz-animation-name: aboutRightPanel_intro;
+  -webkit-animation-name: aboutRightPanel_intro;
+  animation-name: aboutRightPanel_intro;
+  -moz-animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -moz-animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;

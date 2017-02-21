@@ -2,7 +2,7 @@
  * VARIABLES
  */
 
-$mastframe-frame-color:transparent;
+$mastframe-frame-color:#231f20;
 $mastframe-border-width:1px;
 $mastframe-left-panel-top:4vh;
 $mastframe-left-panel-right:56px;
@@ -12,15 +12,6 @@ $mastframe-left-panel-left:3.5vw;
 /*
  * STYLE
  */
-
-@include keyframes(resizebgimage) {
-    0% {
-        background-size: auto 100%;
-    }
-    100% {
-        background-size: auto 107%;
-    }
-}
 
 .mastframe {
     position: absolute;
@@ -32,21 +23,10 @@ $mastframe-left-panel-left:3.5vw;
     @if $mastframe-frame-color !=transparent {
         background-color: $mastframe-frame-color;
     }
-    background-image: url('https://frasaleksander.github.io/images/front/aleksanderfras-2.jpg');
-    background-position:top center;
-    background-repeat: no-repeat;
-    background-size:auto 100%;
-    @include filter(grayscale(1));
-    // @include filter(blur(1px));
-    @include animation-name(resizebgimage);
-    @include animation-duration(14s);
-    @include animation-timing-function(cubic-bezier(.2, 0, .7, 1));
-    @include animation-iteration-count(1);
-    @include animation-fill-mode(forwards);
     @include transition(all 0.4s ease 0s);
 }
 
-body[data-left-menu-is-active="true"] .mastframe {
+body[data-is-left-menu-active="true"] .mastframe {
     top: 5vh;
     bottom: -5vh;
     left: 25vw;

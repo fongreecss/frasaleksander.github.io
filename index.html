@@ -37,12 +37,12 @@
     </script>
 </head>
 
-<body id="app" data-left-menu-is-active="false">
+<body id="app" data-change-state="none">
 
     <nav id="mastnav">
         <ul class="main-navigation">
             <li>
-                <a href="#about"><span data-text="about-me">about me</span></a>
+                <a href="#about"><span data-text="about me">about me</span></a>
             </li>
             <li>
                 <a href="#work"><span data-text="work">work</span></a>
@@ -57,20 +57,25 @@
         <div class="author-menu-footer-stuff"><span>Hand coded with</span> <span>&#x3c;3</span> <span>by Aleksander Fras</span></div>
     </nav>
     <!-- #mastnav -->
-    <div id="mastframe" class="mastframe section-active">
-        <div class="mastframe-left-panel" data-text-color="white">
+    <div id="mastframe" class="mastframe">
+        <section id="about" class="main-sections about-section active-section">
+            <div class="about-right-panel section-panel right-panel">
+
+            </div>
+        </section>
+        <!-- #about.about-section -->
+        <div class="mastframe-left-panel" data-text-color="dark-gray">
             <div class="site-logo">af
             </div>
             <!-- .site-logo -->
 
-            <a href="#" class="trigger-button left-menu-button" data-prevent-defalit="true" data-left-menu-is-active="false">
+            <a href="#" class="trigger-button left-menu-button">
                 <span class="top-line"></span>
-                <div class="middle-line"></div>
                 <span class="bottom-line"></span>
             </a>
             <!-- .left-menu-button -->
 
-            <a href="#" class="trigger-button socials-button" data-prevent-default="true">
+            <a href="#" class="trigger-button socials-button">
                 socials
                 </a>
             <!-- .socials-button -->

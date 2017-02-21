@@ -50,8 +50,74 @@
     bottom: 5vh;
     padding-left: 5vh;
     left: 0;
-    font-size: 14px;
+    font-size: 13px;
     span {
         @include inline-block();
+    }
+}
+
+@include keyframes(textGlitch_before) {
+    0% {
+        top: 0px;
+        left: 1px;
+    }
+    25% {
+        top: 4px;
+        left: -1px;
+    }
+    50% {
+        top: 4px;
+        left: 1px;
+    }
+    75% {
+        top: 0px;
+        left: -4px;
+    }
+    100% {
+        top: -2px;
+        left: 1px;
+    }
+}
+
+@include keyframes(textGlitch_after) {
+    0% {
+        top: 2px;
+        left: 1px;
+    }
+    25% {
+        top: 0px;
+        left: -2px;
+    }
+    50% {
+        top: 2px;
+        left: -1px;
+    }
+    75% {
+        top: 0;
+        left: 2px;
+    }
+    100% {
+        top: 2px;
+        left: 1px;
+    }
+}
+
+[data-text]:hover {
+    &:before {
+        content: attr(data-text);
+        white-space: nowrap;
+        position: absolute;
+        top: 4px;
+        left: -1px;
+        z-index: -1;
+        color: #ff0099;
+        color: #0f94fc;
+        color: #bbb;
+        @include animation-name(textGlitch_before);
+        @include animation-duration(0.5s);
+        @include animation-timing-function(step-end);
+        @include animation-iteration-count(infinite);
+        @include animation-fill-mode(forwards);
+        @include animation-direction(alternate);
     }
 }
