@@ -5,69 +5,6 @@
     $left-menu-button-animation-duration: 0.4s;
     $left-menu-button-animation-timing-function:cubic-bezier(.2, 0, .7, 1);
     /*
-     * ANIMATIONS
-     */
-    
-    @include keyframes(menuTopLineAnimation_Active) {
-        0% {
-            top: 0;
-            @include transform(rotate(0deg));
-        }
-        50% {
-            top: calc(50% - 2px);
-            @include transform(rotate(0deg));
-        }
-        100% {
-            top: calc(50% - 2px);
-            @include transform(rotate(-40deg));
-        }
-    }
-    
-    @include keyframes(menuBottomLineAnimation_Active) {
-        0% {
-            bottom: 0;
-            @include transform(rotate(0deg));
-        }
-        50% {
-            bottom: calc(50% - 2px);
-            @include transform(rotate(0deg));
-        }
-        100% {
-            bottom: calc(50% - 2px);
-            @include transform(rotate(40deg));
-        }
-    }
-    
-    @include keyframes(menuTopLineAnimation_NonActive) {
-        0% {
-            top: calc(50% - 2px);
-            @include transform(rotate(0deg));
-        }
-        50% {
-            top: calc(50% - 2px);
-            @include transform(rotate(0deg));
-        }
-        100% {
-            top: 0;
-            @include transform(rotate(0deg));
-        }
-    }
-    
-    @include keyframes(menuBottomLineAnimation_NonActive) {
-        0% {
-            bottom: calc(50% - 2px);
-            @include transform(rotate(0deg));
-        }
-        50% {
-            bottom: calc(50% - 2px);
-            @include transform(rotate(0deg));
-        }
-        100% {
-            bottom: 0;
-            @include transform(rotate(0deg));
-        }
-    }
-    /*
      * STYLES
      */
     
@@ -112,7 +49,6 @@
     }
     
     .left-menu-button[data-is-left-menu-active="true"] {
-        //height: $left-menu-button-height*5/2 + px;
         .top-line {
             top: calc(50% - 2px);
             @include transform(rotate(-40deg));
