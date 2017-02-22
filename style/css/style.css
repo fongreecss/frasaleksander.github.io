@@ -655,7 +655,7 @@ body[data-is-left-menu-active="true"] .mastframe {
 }
 
 /* line 34, ../scss/sections/mastframe/_socials-button.scss */
-.mastframe-left-panel[data-text-color="dark-gray"] .socials-button {
+.mastframe-left-panel[data-text-color="dark-grey"] .socials-button {
   color: #333;
 }
 
@@ -674,14 +674,14 @@ body[data-is-left-menu-active="true"] .mastframe {
 }
 
 /* line 13, ../scss/sections/mastframe/_site-logo.scss */
-.mastframe-left-panel[data-text-color="dark-gray"] .site-logo {
+.mastframe-left-panel[data-text-color="dark-grey"] .site-logo {
   color: #333;
 }
 
 /*
  * STYLES
  */
-/* line 11, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 10, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button[data-is-left-menu-active="false"],
 .left-menu-button[data-is-left-menu-active="true"],
 .left-menu-button {
@@ -696,7 +696,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-/* line 21, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 20, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button[data-is-left-menu-active="false"] .top-line,
 .left-menu-button[data-is-left-menu-active="false"] .bottom-line,
 .left-menu-button[data-is-left-menu-active="true"] .top-line,
@@ -705,7 +705,6 @@ body[data-is-left-menu-active="true"] .mastframe {
 .left-menu-button .bottom-line {
   position: absolute;
   height: 4px;
-  background-color: #333;
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
@@ -713,7 +712,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   right: 15%;
   left: 15%;
 }
-/* line 30, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 28, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button[data-is-left-menu-active="false"] .top-line,
 .left-menu-button[data-is-left-menu-active="true"] .top-line,
 .left-menu-button .top-line {
@@ -724,7 +723,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   -webkit-transition-delay: 0s;
   transition: top 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
 }
-/* line 34, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 32, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button[data-is-left-menu-active="false"] .bottom-line,
 .left-menu-button[data-is-left-menu-active="true"] .bottom-line,
 .left-menu-button .bottom-line {
@@ -736,7 +735,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   transition: bottom 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
 }
 
-/* line 41, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 39, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button[data-is-left-menu-active="false"] .top-line {
   top: 27%;
   -moz-transition: -moz-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
@@ -745,7 +744,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   -webkit-transition-delay: 0s, 0.4s;
   transition: transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
 }
-/* line 45, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 43, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button[data-is-left-menu-active="false"] .bottom-line {
   bottom: 27%;
   -moz-transition: -moz-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
@@ -755,7 +754,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   transition: transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
 }
 
-/* line 52, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 50, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button[data-is-left-menu-active="true"] .top-line {
   top: calc(50% - 2px);
   -moz-transform: rotate(-40deg);
@@ -768,7 +767,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   -webkit-transition-delay: 0s, 0.4s;
   transition: top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
 }
-/* line 57, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 55, ../scss/sections/mastframe/_left-menu-button.scss */
 .left-menu-button[data-is-left-menu-active="true"] .bottom-line {
   bottom: calc(50% - 2px);
   -moz-transform: rotate(40deg);
@@ -785,6 +784,18 @@ body[data-is-left-menu-active="true"] .mastframe {
   @include animation-timing-function($left-menu-button-animation-timing-function);
   @include animation-iteration-count(1);
   @include animation-fill-mode(forwards);*/
+}
+
+/* line 68, ../scss/sections/mastframe/_left-menu-button.scss */
+.mastframe-left-panel[data-text-color="white"] .left-menu-button .top-line,
+.mastframe-left-panel[data-text-color="white"] .left-menu-button .bottom-line {
+  background-color: #f5f5f5;
+}
+
+/* line 75, ../scss/sections/mastframe/_left-menu-button.scss */
+.mastframe-left-panel[data-text-color="dark-grey"] .left-menu-button .top-line,
+.mastframe-left-panel[data-text-color="dark-grey"] .left-menu-button .bottom-line {
+  background-color: #333;
 }
 
 /*
@@ -1009,8 +1020,8 @@ body[data-is-left-menu-active="true"] .mastframe {
 [data-is-left-menu-active="false"] .about-right-panel:before,
 [data-is-left-menu-active="true"] .about-right-panel:before,
 .about-right-panel:before {
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   background-image: url("https://frasaleksander.github.io/images/front/aleksanderfras-2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
