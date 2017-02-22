@@ -806,187 +806,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   background-color: #f5f5f5;
 }
 
-@-webkit-keyframes aboutRightPanel_intro {
-  0% {
-    height: 30vh;
-    left: 0;
-    right: 50%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-  40%,
-    48% {
-    height: 100vh;
-    left: 0;
-    right: 50%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
-    opacity: 0.33;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-  100% {
-    height: 75vh;
-    left: 50%;
-    right: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-    opacity: 0.8;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-}
-@-moz-keyframes aboutRightPanel_intro {
-  0% {
-    height: 30vh;
-    left: 0;
-    right: 50%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-  40%,
-    48% {
-    height: 100vh;
-    left: 0;
-    right: 50%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
-    opacity: 0.33;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-  100% {
-    height: 75vh;
-    left: 50%;
-    right: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-    opacity: 0.8;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-}
-@-ms-keyframes aboutRightPanel_intro {
-  0% {
-    height: 30vh;
-    left: 0;
-    right: 50%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-  40%,
-    48% {
-    height: 100vh;
-    left: 0;
-    right: 50%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
-    opacity: 0.33;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-  100% {
-    height: 75vh;
-    left: 50%;
-    right: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-    opacity: 0.8;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-}
-@-o-keyframes aboutRightPanel_intro {
-  0% {
-    height: 30vh;
-    left: 0;
-    right: 50%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-  40%,
-    48% {
-    height: 100vh;
-    left: 0;
-    right: 50%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
-    opacity: 0.33;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-  100% {
-    height: 75vh;
-    left: 50%;
-    right: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-    opacity: 0.8;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-}
-@keyframes aboutRightPanel_intro {
-  0% {
-    height: 30vh;
-    left: 0;
-    right: 50%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-  40%,
-    48% {
-    height: 100vh;
-    left: 0;
-    right: 50%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
-    opacity: 0.33;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-  100% {
-    height: 75vh;
-    left: 50%;
-    right: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-    opacity: 0.8;
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  }
-}
-/* line 26, ../scss/sections/about/_about-right-panel.scss */
+/* line 1, ../scss/sections/about/_about-right-panel.scss */
 [data-is-left-menu-active="false"] .about-right-panel,
 [data-is-left-menu-active="true"] .about-right-panel,
 .about-right-panel {
@@ -1003,7 +823,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 37, ../scss/sections/about/_about-right-panel.scss */
+/* line 12, ../scss/sections/about/_about-right-panel.scss */
 [data-is-left-menu-active="false"] .about-right-panel:before, [data-is-left-menu-active="false"] .about-right-panel:after,
 [data-is-left-menu-active="true"] .about-right-panel:before,
 [data-is-left-menu-active="true"] .about-right-panel:after,
@@ -1016,7 +836,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   width: 100%;
   height: 100%;
 }
-/* line 46, ../scss/sections/about/_about-right-panel.scss */
+/* line 21, ../scss/sections/about/_about-right-panel.scss */
 [data-is-left-menu-active="false"] .about-right-panel:before,
 [data-is-left-menu-active="true"] .about-right-panel:before,
 .about-right-panel:before {
@@ -1027,7 +847,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
-/* line 53, ../scss/sections/about/_about-right-panel.scss */
+/* line 28, ../scss/sections/about/_about-right-panel.scss */
 [data-is-left-menu-active="false"] .about-right-panel:after,
 [data-is-left-menu-active="true"] .about-right-panel:after,
 .about-right-panel:after {
@@ -1037,7 +857,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   background-color: rgba(3, 169, 244, 0.3);
 }
 
-/* line 62, ../scss/sections/about/_about-right-panel.scss */
+/* line 37, ../scss/sections/about/_about-right-panel.scss */
 [data-is-left-menu-active="false"] .about-right-panel {
   height: 75%;
   left: 50%;
@@ -1050,7 +870,7 @@ body[data-is-left-menu-active="true"] .mastframe {
   transition: height 0.7s ease 0s, left 0.4s ease 0.4s, opacity 0.4s ease 0.4s;
 }
 
-/* line 71, ../scss/sections/about/_about-right-panel.scss */
+/* line 46, ../scss/sections/about/_about-right-panel.scss */
 [data-is-left-menu-active="true"] .about-right-panel {
   height: 100%;
   left: 0;
