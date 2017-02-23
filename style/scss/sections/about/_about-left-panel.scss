@@ -1,0 +1,16 @@
+.about-left-panel {
+    top: 50%;
+    left: calc(#{$mastframe-left-panel-left*2} + #{$mastframe-left-panel-width});
+    height: 75%;
+    width: calc(50% - #{$mastframe-left-panel-left*2} - #{$mastframe-left-panel-width});
+    @include transform(translate(0, -50%));
+}
+
+.about-left-panel .left-panel-inner {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    @include inline-block();
+    @include transform(translate(0%, -50%));
+}

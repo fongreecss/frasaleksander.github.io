@@ -1,0 +1,12 @@
+.panel-title {
+    margin-bottom: 4vh;
+    font-size: 0;
+    span {
+        @include inline-block();
+        font-size: 40px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+}

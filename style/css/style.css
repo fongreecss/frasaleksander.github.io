@@ -167,6 +167,51 @@ a:visited {
   cursor: pointer;
 }
 
+/* line 1, ../scss/reusable-elements/_panel-title.scss */
+.panel-title {
+  margin-bottom: 4vh;
+  font-size: 0;
+}
+/* line 4, ../scss/reusable-elements/_panel-title.scss */
+.panel-title span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 40px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* line 1, ../scss/reusable-elements/_panel-description.scss */
+.panel-description {
+  line-height: 1.625;
+}
+
+/* line 3, ../scss/reusable-elements/_dark-background-light-letter.scss */
+.about-left-panel .panel-title .dark-background-light-letter {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+/* line 1, ../scss/reusable-elements/_line-break-before.scss */
+.line-break-before {
+  display: block !important;
+}
+/* line 3, ../scss/reusable-elements/_line-break-before.scss */
+.line-break-before:before {
+  display: block;
+}
+
+/* line 2, ../scss/reusable-elements/_line-break-after.scss */
+.line-break-after:after {
+  content: "";
+  display: block;
+}
+
 /* line 1, ../scss/navigation/_mastnav.scss */
 #mastnav {
   position: absolute;
@@ -208,24 +253,31 @@ a:visited {
   position: absolute;
   top: calc(50% - 14px);
 }
-/* line 33, ../scss/navigation/_mastnav.scss */
+/* line 32, ../scss/navigation/_mastnav.scss */
 #mastnav .main-navigation a:before {
   content: counter(nav-index,upper-roman) ".";
   letter-spacing: 0;
-  font-size: 16px;
+  font-size: 13px;
+  padding-bottom: 3px;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
+  vertical-align: bottom;
   width: 48px;
 }
-/* line 40, ../scss/navigation/_mastnav.scss */
+/* line 41, ../scss/navigation/_mastnav.scss */
 #mastnav .main-navigation a span {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
 }
 
-/* line 47, ../scss/navigation/_mastnav.scss */
+/* line 48, ../scss/navigation/_mastnav.scss */
 #mastnav .author-menu-footer-stuff {
   position: absolute;
   display: inline-block;
@@ -238,7 +290,7 @@ a:visited {
   left: 0;
   font-size: 13px;
 }
-/* line 54, ../scss/navigation/_mastnav.scss */
+/* line 55, ../scss/navigation/_mastnav.scss */
 #mastnav .author-menu-footer-stuff span {
   display: inline-block;
   vertical-align: middle;
@@ -247,259 +299,11 @@ a:visited {
   *display: inline;
 }
 
-@-webkit-keyframes textGlitch_before {
-  0% {
-    top: 0px;
-    left: 1px;
-  }
-  25% {
-    top: 4px;
-    left: -1px;
-  }
-  50% {
-    top: 4px;
-    left: 1px;
-  }
-  75% {
-    top: 0px;
-    left: -4px;
-  }
-  100% {
-    top: -2px;
-    left: 1px;
-  }
-}
-@-moz-keyframes textGlitch_before {
-  0% {
-    top: 0px;
-    left: 1px;
-  }
-  25% {
-    top: 4px;
-    left: -1px;
-  }
-  50% {
-    top: 4px;
-    left: 1px;
-  }
-  75% {
-    top: 0px;
-    left: -4px;
-  }
-  100% {
-    top: -2px;
-    left: 1px;
-  }
-}
-@-ms-keyframes textGlitch_before {
-  0% {
-    top: 0px;
-    left: 1px;
-  }
-  25% {
-    top: 4px;
-    left: -1px;
-  }
-  50% {
-    top: 4px;
-    left: 1px;
-  }
-  75% {
-    top: 0px;
-    left: -4px;
-  }
-  100% {
-    top: -2px;
-    left: 1px;
-  }
-}
-@-o-keyframes textGlitch_before {
-  0% {
-    top: 0px;
-    left: 1px;
-  }
-  25% {
-    top: 4px;
-    left: -1px;
-  }
-  50% {
-    top: 4px;
-    left: 1px;
-  }
-  75% {
-    top: 0px;
-    left: -4px;
-  }
-  100% {
-    top: -2px;
-    left: 1px;
-  }
-}
-@keyframes textGlitch_before {
-  0% {
-    top: 0px;
-    left: 1px;
-  }
-  25% {
-    top: 4px;
-    left: -1px;
-  }
-  50% {
-    top: 4px;
-    left: 1px;
-  }
-  75% {
-    top: 0px;
-    left: -4px;
-  }
-  100% {
-    top: -2px;
-    left: 1px;
-  }
-}
-@-webkit-keyframes textGlitch_after {
-  0% {
-    top: 2px;
-    left: 1px;
-  }
-  25% {
-    top: 0px;
-    left: -2px;
-  }
-  50% {
-    top: 2px;
-    left: -1px;
-  }
-  75% {
-    top: 0;
-    left: 2px;
-  }
-  100% {
-    top: 2px;
-    left: 1px;
-  }
-}
-@-moz-keyframes textGlitch_after {
-  0% {
-    top: 2px;
-    left: 1px;
-  }
-  25% {
-    top: 0px;
-    left: -2px;
-  }
-  50% {
-    top: 2px;
-    left: -1px;
-  }
-  75% {
-    top: 0;
-    left: 2px;
-  }
-  100% {
-    top: 2px;
-    left: 1px;
-  }
-}
-@-ms-keyframes textGlitch_after {
-  0% {
-    top: 2px;
-    left: 1px;
-  }
-  25% {
-    top: 0px;
-    left: -2px;
-  }
-  50% {
-    top: 2px;
-    left: -1px;
-  }
-  75% {
-    top: 0;
-    left: 2px;
-  }
-  100% {
-    top: 2px;
-    left: 1px;
-  }
-}
-@-o-keyframes textGlitch_after {
-  0% {
-    top: 2px;
-    left: 1px;
-  }
-  25% {
-    top: 0px;
-    left: -2px;
-  }
-  50% {
-    top: 2px;
-    left: -1px;
-  }
-  75% {
-    top: 0;
-    left: 2px;
-  }
-  100% {
-    top: 2px;
-    left: 1px;
-  }
-}
-@keyframes textGlitch_after {
-  0% {
-    top: 2px;
-    left: 1px;
-  }
-  25% {
-    top: 0px;
-    left: -2px;
-  }
-  50% {
-    top: 2px;
-    left: -1px;
-  }
-  75% {
-    top: 0;
-    left: 2px;
-  }
-  100% {
-    top: 2px;
-    left: 1px;
-  }
-}
-/* line 106, ../scss/navigation/_mastnav.scss */
-[data-text]:hover:before {
-  content: attr(data-text);
-  white-space: nowrap;
-  position: absolute;
-  top: 4px;
-  left: -1px;
-  z-index: -1;
-  color: #ff0099;
-  color: #0f94fc;
-  color: #bbb;
-  -moz-animation-name: textGlitch_before;
-  -webkit-animation-name: textGlitch_before;
-  animation-name: textGlitch_before;
-  -moz-animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -moz-animation-timing-function: step-end;
-  -webkit-animation-timing-function: step-end;
-  animation-timing-function: step-end;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -moz-animation-direction: alternate;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-}
-
-/* line 1, ../scss/sections/_main-sections.scss */
-.main-sections {
+/*
+ * ANIMATION
+ */
+/* line 1, ../scss/sections/_main-section.scss */
+.main-section {
   position: absolute;
   top: 0;
   left: 0;
@@ -513,7 +317,7 @@ a:visited {
 /*
  * STYLE
  */
-/* line 16, ../scss/sections/mastframe/_mastframe.scss */
+/* line 12, ../scss/sections/mastframe/_mastframe.scss */
 .mastframe {
   position: absolute;
   top: 0;
@@ -529,7 +333,7 @@ a:visited {
   transition: all 0.4s ease 0s;
 }
 
-/* line 29, ../scss/sections/mastframe/_mastframe.scss */
+/* line 25, ../scss/sections/mastframe/_mastframe.scss */
 body[data-is-left-menu-active="true"] .mastframe {
   top: 5vh;
   bottom: -5vh;
@@ -537,12 +341,18 @@ body[data-is-left-menu-active="true"] .mastframe {
   right: -25vw;
 }
 
-/* line 1, ../scss/sections/mastframe/_mastframe-left-panel.scss */
+/*
+ * VARIABLES
+ */
+/*
+ * STYLES
+ */
+/* line 14, ../scss/sections/mastframe/_mastframe-left-panel.scss */
 .mastframe-left-panel {
   position: absolute;
   top: 4vh;
   bottom: 4vh;
-  left: 3.5vw;
+  left: 3.5%;
   width: 58px;
 }
 
@@ -798,12 +608,58 @@ body[data-is-left-menu-active="true"] .mastframe {
   background-color: #333;
 }
 
+/* line 1, ../scss/sections/_left-panel.scss */
+.left-panel,
+.right-panel {
+  position: absolute;
+}
+/* line 4, ../scss/sections/_left-panel.scss */
+.left-panel:before, .left-panel:after,
+.right-panel:before,
+.right-panel:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
 /*
  * VARIABLES
  */
 /* line 6, ../scss/sections/about/_about.scss */
 .about-section {
   background-color: #f5f5f5;
+}
+
+/* line 1, ../scss/sections/about/_about-left-panel.scss */
+.about-left-panel {
+  top: 50%;
+  left: calc(7% + 58px);
+  height: 75%;
+  width: calc(50% - 7% - 58px);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* line 9, ../scss/sections/about/_about-left-panel.scss */
+.about-left-panel .left-panel-inner {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
 }
 
 /* line 1, ../scss/sections/about/_about-right-panel.scss */
@@ -851,9 +707,6 @@ body[data-is-left-menu-active="true"] .mastframe {
 [data-is-left-menu-active="false"] .about-right-panel:after,
 [data-is-left-menu-active="true"] .about-right-panel:after,
 .about-right-panel:after {
-  background-color: rgba(255, 50, 25, 0.55);
-  background-color: rgba(47, 190, 100, 0.6);
-  background-color: rgba(255, 157, 1, 0.6);
   background-color: rgba(3, 169, 244, 0.3);
 }
 
@@ -883,25 +736,5 @@ body[data-is-left-menu-active="true"] .mastframe {
   -webkit-transition-delay: 0s, 0.4s, 0.4s, 0.4s;
   transition: left 0.3s ease 0s, height 0.3s ease 0.4s, width 0.3s ease 0.4s, opacity 0.3s ease 0.4s;
 }
-
-/*.about-right-panel {
-    position: absolute;
-    height: 60vh;
-    top: 50%;
-    left: 50%;
-    right: 0;
-    overflow: hidden;
-    @include transform(translate(0, -50%));
-    background-image: url('https://frasaleksander.github.io/images/front/aleksanderfras-2.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    @include filter(grayscale(1));
-    @include animation-name(aboutRightPanel_intro);
-    @include animation-duration(1.20s);
-    @include animation-timing-function(ease);
-    @include animation-iteration-count(1);
-    @include animation-fill-mode(forwards);
-}*/
 
 /*# sourceMappingURL=style.css.map */

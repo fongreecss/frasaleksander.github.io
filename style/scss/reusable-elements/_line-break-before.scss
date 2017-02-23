@@ -1,0 +1,6 @@
+.line-break-before {
+    display: block !important;
+    &:before {
+        display: block;
+    }
+}

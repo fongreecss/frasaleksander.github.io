@@ -1,9 +1,22 @@
+/*
+ * VARIABLES
+ */
+
+$mastframe-left-panel-top:4vh;
+$mastframe-left-panel-bottom:4vh;
+$mastframe-left-panel-left:3.5%;
+$mastframe-left-panel-width:58px;
+
+/*
+ * STYLES
+ */
+
 .mastframe-left-panel {
     position: absolute;
     top: $mastframe-left-panel-top;
     bottom: $mastframe-left-panel-bottom;
     left: $mastframe-left-panel-left;
-    width: 58px;
+    width: $mastframe-left-panel-width;
 }
 
 @import "site-title";

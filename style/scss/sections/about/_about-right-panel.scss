@@ -26,9 +26,9 @@
         background-size: auto 100%;
     }
     &:after {
-        background-color: rgba(255, 50, 25, 0.55);
-        background-color: rgba(47, 190, 100, 0.6);
-        background-color: rgba(255, 157, 1, 0.6);
+        //background-color: rgba(255, 50, 25, 0.55);
+        //background-color: rgba(47, 190, 100, 0.6);
+        //background-color: rgba(255, 157, 1, 0.6);
         background-color: rgba(3, 169, 244, 0.30);
         //@include filter(grayscale(0.5));
     }
@@ -53,24 +53,3 @@
     width 0.3s ease 0.4s,
     opacity 0.3s ease 0.4s);
 }
-
-
-/*.about-right-panel {
-    position: absolute;
-    height: 60vh;
-    top: 50%;
-    left: 50%;
-    right: 0;
-    overflow: hidden;
-    @include transform(translate(0, -50%));
-    background-image: url('https://frasaleksander.github.io/images/front/aleksanderfras-2.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    @include filter(grayscale(1));
-    @include animation-name(aboutRightPanel_intro);
-    @include animation-duration(1.20s);
-    @include animation-timing-function(ease);
-    @include animation-iteration-count(1);
-    @include animation-fill-mode(forwards);
-}*/
