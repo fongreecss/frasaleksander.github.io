@@ -11,7 +11,7 @@
     counter-reset: nav-index;
     position: absolute;
     top: 5vh;
-    width: 25vw;
+    width: 100%;
     left: 0;
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@
             padding-bottom: 3px;
             @include inline-block();
             vertical-align: bottom;
-            width: 48px;
+            width: 50px;
         }
         span {
             position: relative;
@@ -44,6 +44,45 @@
         }
     }
 }
+
+[data-is-left-menu-active="false"] #mastnav .main-navigation {
+    @for $i from 1 through 4 {
+        li {
+            @include opacity(0);
+            @include transition(opacity 0.5s ease 0s);
+        }
+        li:nth-child(#{$i}) {
+            @include transition-delay(#{(5-$i)*0.15}s);
+            a:before {
+                width: 200px;
+                @include transition(width 0.4s ease 0s);
+                @include transition-delay(#{(5-$i)*0.20}s);
+            }
+        }
+    }
+}
+
+[data-is-left-menu-active="true"] #mastnav .main-navigation {
+    @for $i from 4 through 1 {
+        li {
+            @include opacity(1);
+            @include transition(opacity 0.5s ease 0s);
+        }
+        li:nth-child(#{$i}) {
+            @include transition-delay(#{$i*0.15}s);
+            a:before {
+                width: 50px;
+                @include transition(width 0.5s ease 0s);
+                @include transition-delay(#{($i)*0.15}s);
+            }
+        }
+    }
+}
+
+
+/*
+ * author-menu-footer-stuff
+ */
 
 #mastnav .author-menu-footer-stuff {
     position: absolute;
