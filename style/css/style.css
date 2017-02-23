@@ -708,7 +708,7 @@ body[data-is-left-menu-active="true"] .mastframe {
 [data-is-left-menu-active="false"] .about-right-panel:after,
 [data-is-left-menu-active="true"] .about-right-panel:after,
 .about-right-panel:after {
-  background-color: rgba(3, 169, 244, 0.3);
+  background-color: rgba(3, 169, 244, 0.32);
 }
 
 /* line 37, ../scss/sections/about/_about-right-panel.scss */
