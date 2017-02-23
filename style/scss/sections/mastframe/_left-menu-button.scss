@@ -7,8 +7,8 @@
      * STYLES
      */
     
-    .left-menu-button[data-is-left-menu-active="false"],
-    .left-menu-button[data-is-left-menu-active="true"],
+    [data-is-left-menu-active="false"] .left-menu-button,
+    [data-is-left-menu-active="true"] .left-menu-button,
     .left-menu-button {
         position: absolute;
         cursor: pointer;
@@ -35,7 +35,7 @@
         }
     }
     
-    .left-menu-button[data-is-left-menu-active="false"] {
+    [data-is-left-menu-active="false"] .left-menu-button {
         .top-line {
             top: 27%;
             @include transition(transform 0.2s $left-menu-button-animation-timing-function 0s, top 0.2s $left-menu-button-animation-timing-function 0.4s);
@@ -46,7 +46,7 @@
         }
     }
     
-    .left-menu-button[data-is-left-menu-active="true"] {
+    [data-is-left-menu-active="true"] .left-menu-button {
         .top-line {
             top: calc(50% - 2px);
             @include transform(rotate(-40deg));

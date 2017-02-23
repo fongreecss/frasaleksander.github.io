@@ -6,7 +6,9 @@
     right: 0;
 }
 
-#mastnav .main-navigation {
+#mastnav .main-navigation,
+[data-is-left-menu-active="false"] #mastnav .main-navigation,
+[data-is-left-menu-active="true"] #mastnav .main-navigation {
     @include inline-block();
     counter-reset: nav-index;
     position: absolute;
