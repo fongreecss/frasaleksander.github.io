@@ -297,7 +297,7 @@ a:visited {
 }
 /* line 56, ../scss/navigation/_mastnav.scss */
 [data-is-left-menu-active="false"] #mastnav .main-navigation li:nth-child(1) a:before {
-  width: 200px;
+  width: 150px;
   -moz-transition: width 0.4s ease 0s;
   -o-transition: width 0.4s ease 0s;
   -webkit-transition: width 0.4s ease;
@@ -327,7 +327,7 @@ a:visited {
 }
 /* line 56, ../scss/navigation/_mastnav.scss */
 [data-is-left-menu-active="false"] #mastnav .main-navigation li:nth-child(2) a:before {
-  width: 200px;
+  width: 150px;
   -moz-transition: width 0.4s ease 0s;
   -o-transition: width 0.4s ease 0s;
   -webkit-transition: width 0.4s ease;
@@ -357,7 +357,7 @@ a:visited {
 }
 /* line 56, ../scss/navigation/_mastnav.scss */
 [data-is-left-menu-active="false"] #mastnav .main-navigation li:nth-child(3) a:before {
-  width: 200px;
+  width: 150px;
   -moz-transition: width 0.4s ease 0s;
   -o-transition: width 0.4s ease 0s;
   -webkit-transition: width 0.4s ease;
@@ -387,7 +387,7 @@ a:visited {
 }
 /* line 56, ../scss/navigation/_mastnav.scss */
 [data-is-left-menu-active="false"] #mastnav .main-navigation li:nth-child(4) a:before {
-  width: 200px;
+  width: 150px;
   -moz-transition: width 0.4s ease 0s;
   -o-transition: width 0.4s ease 0s;
   -webkit-transition: width 0.4s ease;
@@ -403,11 +403,11 @@ a:visited {
 [data-is-left-menu-active="true"] #mastnav .main-navigation li {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  -moz-transition: opacity 0.5s ease 0s;
-  -o-transition: opacity 0.5s ease 0s;
+  -moz-transition: opacity 0.5s ease 0.2s;
+  -o-transition: opacity 0.5s ease 0.2s;
   -webkit-transition: opacity 0.5s ease;
-  -webkit-transition-delay: 0s;
-  transition: opacity 0.5s ease 0s;
+  -webkit-transition-delay: 0.2s;
+  transition: opacity 0.5s ease 0.2s;
 }
 /* line 71, ../scss/navigation/_mastnav.scss */
 [data-is-left-menu-active="true"] #mastnav .main-navigation li:nth-child(4) {
@@ -433,11 +433,11 @@ a:visited {
 [data-is-left-menu-active="true"] #mastnav .main-navigation li {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  -moz-transition: opacity 0.5s ease 0s;
-  -o-transition: opacity 0.5s ease 0s;
+  -moz-transition: opacity 0.5s ease 0.2s;
+  -o-transition: opacity 0.5s ease 0.2s;
   -webkit-transition: opacity 0.5s ease;
-  -webkit-transition-delay: 0s;
-  transition: opacity 0.5s ease 0s;
+  -webkit-transition-delay: 0.2s;
+  transition: opacity 0.5s ease 0.2s;
 }
 /* line 71, ../scss/navigation/_mastnav.scss */
 [data-is-left-menu-active="true"] #mastnav .main-navigation li:nth-child(3) {
@@ -463,11 +463,11 @@ a:visited {
 [data-is-left-menu-active="true"] #mastnav .main-navigation li {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  -moz-transition: opacity 0.5s ease 0s;
-  -o-transition: opacity 0.5s ease 0s;
+  -moz-transition: opacity 0.5s ease 0.2s;
+  -o-transition: opacity 0.5s ease 0.2s;
   -webkit-transition: opacity 0.5s ease;
-  -webkit-transition-delay: 0s;
-  transition: opacity 0.5s ease 0s;
+  -webkit-transition-delay: 0.2s;
+  transition: opacity 0.5s ease 0.2s;
 }
 /* line 71, ../scss/navigation/_mastnav.scss */
 [data-is-left-menu-active="true"] #mastnav .main-navigation li:nth-child(2) {
@@ -493,11 +493,11 @@ a:visited {
 [data-is-left-menu-active="true"] #mastnav .main-navigation li {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  -moz-transition: opacity 0.5s ease 0s;
-  -o-transition: opacity 0.5s ease 0s;
+  -moz-transition: opacity 0.5s ease 0.2s;
+  -o-transition: opacity 0.5s ease 0.2s;
   -webkit-transition: opacity 0.5s ease;
-  -webkit-transition-delay: 0s;
-  transition: opacity 0.5s ease 0s;
+  -webkit-transition-delay: 0.2s;
+  transition: opacity 0.5s ease 0.2s;
 }
 /* line 71, ../scss/navigation/_mastnav.scss */
 [data-is-left-menu-active="true"] #mastnav .main-navigation li:nth-child(1) {
