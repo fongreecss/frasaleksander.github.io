@@ -34,7 +34,7 @@ window.$ = window.jQuery = require('jquery');
     App.isLeftMenuActive = function() {
         return App.element.attr('data-is-left-menu-active') == "true" ? "true" : "false";
     };
-    App.toggleAttributeState = function() {
+    App.toggleAttributeState = function(element, attributeName, possibleValues, forceValue) {
 
     };
 
