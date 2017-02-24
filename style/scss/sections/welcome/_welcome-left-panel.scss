@@ -1,0 +1,39 @@
+.welcome-left-panel {
+    top: 50%;
+    left: calc(#{$mastframe-left-panel-left*2} + #{$mastframe-left-panel-width});
+    height: 75%;
+    width: calc(50% - #{$mastframe-left-panel-left*2} - #{$mastframe-left-panel-width});
+    @include transform(translate(0, -50%));
+}
+
+.welcome-left-panel .left-panel-inner {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 20%;
+    @include inline-block();
+    @include transform(translate(0%, -50%));
+}
+
+.welcome-left-panel .panel-title {
+    span {
+        @include opacity(0);
+        @include transform(scale(0));
+    }
+}
+
+[data-is-left-menu-active="true"] .welcome-left-panel .panel-title {
+    span {
+        @include opacity(0);
+        @include transform(scale(0));
+        //@include transition(opacity 0.5s ease 1s);
+    }
+}
+
+[data-is-left-menu-active="false"] .welcome-left-panel .panel-title {
+    span {
+        @include opacity(1);
+        @include transform(scale(1));
+        @include transition(opacity 0.4s ease 0.6s, transform 0.4s ease 0.6s);
+    }
+}

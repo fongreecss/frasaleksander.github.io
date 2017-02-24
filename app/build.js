@@ -34,7 +34,10 @@ window.$ = window.jQuery = require('jquery');
     App.element = $('#app');
     App.isLeftMenuActive = function() {
         return App.element.attr('data-is-left-menu-active') == "true" ? "true" : "false";
-    }
+    };
+    App.toggleAttributeState = function() {
+
+    };
 
 })(window.jQuery, window);
 
@@ -45,9 +48,6 @@ window.$ = window.jQuery = require('jquery');
 
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
-            if (typeof $(target).attr(mutation.attributeName) != "undefined") {
-                console.log($(target).attr(mutation.attributeName));
-            }
 
         });
     });

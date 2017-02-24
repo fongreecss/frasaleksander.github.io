@@ -1,0 +1,11 @@
+/*
+ * VARIABLES
+ */
+
+$welcome-frame-color:#f5f5f5;
+.welcome-section {
+    background-color: $welcome-frame-color;
+}
+
+@import "welcome-left-panel";
+@import "welcome-right-panel";

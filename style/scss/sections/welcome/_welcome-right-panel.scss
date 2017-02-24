@@ -1,6 +1,6 @@
-[data-is-left-menu-active="false"] .about-right-panel,
-[data-is-left-menu-active="true"] .about-right-panel,
-.about-right-panel {
+[data-is-left-menu-active="false"] .welcome-right-panel,
+[data-is-left-menu-active="true"] .welcome-right-panel,
+.welcome-right-panel {
     position: absolute;
     @include transform(translate(0, -50%));
     overflow: hidden;
@@ -34,7 +34,7 @@
     }
 }
 
-[data-is-left-menu-active="false"] .about-right-panel {
+[data-is-left-menu-active="false"] .welcome-right-panel {
     height: 75%;
     left: 50%;
     @include opacity(0.95);
@@ -43,7 +43,7 @@
     opacity 0.4s ease 0.4s);
 }
 
-[data-is-left-menu-active="true"] .about-right-panel {
+[data-is-left-menu-active="true"] .welcome-right-panel {
     height: 100%;
     left: 0;
     width: 100%;

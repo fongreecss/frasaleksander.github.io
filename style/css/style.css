@@ -193,7 +193,7 @@ a:visited {
 }
 
 /* line 3, ../scss/reusable-elements/_dark-background-light-letter.scss */
-.about-left-panel .panel-title .dark-background-light-letter {
+.welcome-left-panel .panel-title .dark-background-light-letter {
   background-color: #333;
   color: #f5f5f5;
 }
@@ -884,13 +884,13 @@ a:visited {
 /*
  * VARIABLES
  */
-/* line 6, ../scss/sections/about/_about.scss */
-.about-section {
+/* line 6, ../scss/sections/welcome/_welcome.scss */
+.welcome-section {
   background-color: #f5f5f5;
 }
 
-/* line 1, ../scss/sections/about/_about-left-panel.scss */
-.about-left-panel {
+/* line 1, ../scss/sections/welcome/_welcome-left-panel.scss */
+.welcome-left-panel {
   top: 50%;
   left: calc(7% + 58px);
   height: 75%;
@@ -901,8 +901,8 @@ a:visited {
   transform: translate(0, -50%);
 }
 
-/* line 9, ../scss/sections/about/_about-left-panel.scss */
-.about-left-panel .left-panel-inner {
+/* line 9, ../scss/sections/welcome/_welcome-left-panel.scss */
+.welcome-left-panel .left-panel-inner {
   position: absolute;
   top: 50%;
   left: 10%;
@@ -918,10 +918,45 @@ a:visited {
   transform: translate(0%, -50%);
 }
 
-/* line 1, ../scss/sections/about/_about-right-panel.scss */
-[data-is-left-menu-active="false"] .about-right-panel,
-[data-is-left-menu-active="true"] .about-right-panel,
-.about-right-panel {
+/* line 19, ../scss/sections/welcome/_welcome-left-panel.scss */
+.welcome-left-panel .panel-title span {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+/* line 26, ../scss/sections/welcome/_welcome-left-panel.scss */
+[data-is-left-menu-active="true"] .welcome-left-panel .panel-title span {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+/* line 34, ../scss/sections/welcome/_welcome-left-panel.scss */
+[data-is-left-menu-active="false"] .welcome-left-panel .panel-title span {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -moz-transition: opacity 0.4s ease 0.6s, -moz-transform 0.4s ease 0.6s;
+  -o-transition: opacity 0.4s ease 0.6s, -o-transform 0.4s ease 0.6s;
+  -webkit-transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition-delay: 0.6s, 0.6s;
+  transition: opacity 0.4s ease 0.6s, transform 0.4s ease 0.6s;
+}
+
+/* line 1, ../scss/sections/welcome/_welcome-right-panel.scss */
+[data-is-left-menu-active="false"] .welcome-right-panel,
+[data-is-left-menu-active="true"] .welcome-right-panel,
+.welcome-right-panel {
   position: absolute;
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
@@ -935,12 +970,12 @@ a:visited {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 12, ../scss/sections/about/_about-right-panel.scss */
-[data-is-left-menu-active="false"] .about-right-panel:before, [data-is-left-menu-active="false"] .about-right-panel:after,
-[data-is-left-menu-active="true"] .about-right-panel:before,
-[data-is-left-menu-active="true"] .about-right-panel:after,
-.about-right-panel:before,
-.about-right-panel:after {
+/* line 12, ../scss/sections/welcome/_welcome-right-panel.scss */
+[data-is-left-menu-active="false"] .welcome-right-panel:before, [data-is-left-menu-active="false"] .welcome-right-panel:after,
+[data-is-left-menu-active="true"] .welcome-right-panel:before,
+[data-is-left-menu-active="true"] .welcome-right-panel:after,
+.welcome-right-panel:before,
+.welcome-right-panel:after {
   position: absolute;
   content: "";
   top: 0;
@@ -948,10 +983,10 @@ a:visited {
   width: 100%;
   height: 100%;
 }
-/* line 21, ../scss/sections/about/_about-right-panel.scss */
-[data-is-left-menu-active="false"] .about-right-panel:before,
-[data-is-left-menu-active="true"] .about-right-panel:before,
-.about-right-panel:before {
+/* line 21, ../scss/sections/welcome/_welcome-right-panel.scss */
+[data-is-left-menu-active="false"] .welcome-right-panel:before,
+[data-is-left-menu-active="true"] .welcome-right-panel:before,
+.welcome-right-panel:before {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   background-image: url("https://frasaleksander.github.io/images/front/aleksanderfras-2.jpg");
@@ -959,15 +994,15 @@ a:visited {
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
-/* line 28, ../scss/sections/about/_about-right-panel.scss */
-[data-is-left-menu-active="false"] .about-right-panel:after,
-[data-is-left-menu-active="true"] .about-right-panel:after,
-.about-right-panel:after {
+/* line 28, ../scss/sections/welcome/_welcome-right-panel.scss */
+[data-is-left-menu-active="false"] .welcome-right-panel:after,
+[data-is-left-menu-active="true"] .welcome-right-panel:after,
+.welcome-right-panel:after {
   background-color: rgba(3, 169, 244, 0.32);
 }
 
-/* line 37, ../scss/sections/about/_about-right-panel.scss */
-[data-is-left-menu-active="false"] .about-right-panel {
+/* line 37, ../scss/sections/welcome/_welcome-right-panel.scss */
+[data-is-left-menu-active="false"] .welcome-right-panel {
   height: 75%;
   left: 50%;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
@@ -979,8 +1014,8 @@ a:visited {
   transition: height 0.7s ease 0s, left 0.4s ease 0.4s, opacity 0.4s ease 0.4s;
 }
 
-/* line 46, ../scss/sections/about/_about-right-panel.scss */
-[data-is-left-menu-active="true"] .about-right-panel {
+/* line 46, ../scss/sections/welcome/_welcome-right-panel.scss */
+[data-is-left-menu-active="true"] .welcome-right-panel {
   height: 100%;
   left: 0;
   width: 100%;
