@@ -1,5 +1,4 @@
 window.$ = window.jQuery = require('jquery');
-window.App = {};
 
 (function() {
     var leftMenuButton = $('.left-menu-button');
@@ -29,10 +28,34 @@ window.App = {};
 })();
 
 
-(function($) {
+(function($, window) {
+    window.App = {};
     App.element = $('#app');
     App.isLeftMenuActive = function() {
         return App.element.attr('data-is-left-menu-active') == "true" ? "true" : "false";
     }
 
-})(window.jQuery);
+})(window.jQuery, window);
+
+
+(function($, MutationObserver) {
+    // select the target node
+    // console.log("hej");
+    var target = App.element[0];
+
+    // create an observer instance
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            console.log(mutation);
+        });
+    });
+
+    // configuration of the observer:
+    var config = { attributes: true, childList: true, characterData: true }
+
+    // pass in the target node, as well as the observer options
+    observer.observe(target, config);
+
+    // later, you can stop observing
+    //observer.disconnect();
+}(window.jQuery, require('mutation-observer')));
