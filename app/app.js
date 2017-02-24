@@ -39,21 +39,22 @@ window.$ = window.jQuery = require('jquery');
 
 
 (function($, MutationObserver) {
-    // select the target node
-    // console.log("hej");
+
     var target = App.element[0];
 
-    // create an observer instance
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
-            console.log(mutation);
+            if (typeof $(target).attr(mutation.attributeName) != "undefined") {
+                console.log($(target).attr(mutation.attributeName));
+            }
+
         });
     });
 
-    // configuration of the observer:
+
     var config = { attributes: true, childList: true, characterData: true }
 
-    // pass in the target node, as well as the observer options
+
     observer.observe(target, config);
 
     // later, you can stop observing

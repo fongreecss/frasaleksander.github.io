@@ -955,7 +955,7 @@ a:visited {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   background-image: url("https://frasaleksander.github.io/images/front/aleksanderfras-2.jpg");
-  background-position: center center;
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
