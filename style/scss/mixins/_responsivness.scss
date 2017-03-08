@@ -1,0 +1,17 @@
+@mixin device-mobile() {
+    @media (max-width: #{$mobile-break}px) {
+        @content;
+    }
+}
+
+@mixin device-large() {
+    @media(min-width: #{$mobile-break+1}px) and (max-width: #{$large-break}px) {
+        @content;
+    }
+}
+
+@mixin device-extra-large() {
+    @media(min-width: #{$large-break+1}px) {
+        @content;
+    }
+}

@@ -1,4 +1,5 @@
 window.$ = window.jQuery = require('jquery');
+window.HistoryX = require('./vendor/history.js-master/scripts/bundled/html4+html5/jquery.history.js');
 
 (function() {
     var leftMenuButton = $('.left-menu-button');
@@ -40,8 +41,20 @@ window.$ = window.jQuery = require('jquery');
 
 })(window.jQuery, window);
 
+/*
+ * 
+ */
+(function() {
+    HistoryX.Adapter.bind(window, 'statechange', function() { // Note: We are using statechange instead of popstate
+        var State = History.getState(); // Note: We are using History.getState() instead of event.state
+    });
+    HistoryX.pushState({ state: 1 }, "State 1", "?state=1");
+})();
 
-(function($, MutationObserver) {
+/*
+ *
+ */
+(function($, MutationObserver, undefined) {
 
     var target = App.element[0];
 

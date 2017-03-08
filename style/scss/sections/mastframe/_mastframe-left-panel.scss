@@ -6,6 +6,7 @@ $mastframe-left-panel-top:4vh;
 $mastframe-left-panel-bottom:4vh;
 $mastframe-left-panel-left:3.5%;
 $mastframe-left-panel-width:58px;
+$mastframe-left-panel-width-xlarge:$mastframe-left-panel-width*1.33;
 
 /*
  * STYLES
@@ -16,7 +17,10 @@ $mastframe-left-panel-width:58px;
     top: $mastframe-left-panel-top;
     bottom: $mastframe-left-panel-bottom;
     left: $mastframe-left-panel-left;
-    width: $mastframe-left-panel-width;
+    width: $mastframe-left-panel-width-xlarge;
+    @include device-large() {
+        width: $mastframe-left-panel-width;
+    }
 }
 
 @import "site-title";

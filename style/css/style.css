@@ -597,13 +597,19 @@ a:visited {
 /*
  * STYLES
  */
-/* line 14, ../scss/sections/mastframe/_mastframe-left-panel.scss */
+/* line 15, ../scss/sections/mastframe/_mastframe-left-panel.scss */
 .mastframe-left-panel {
   position: absolute;
   top: 4vh;
   bottom: 4vh;
   left: 3.5%;
-  width: 58px;
+  width: 77.14px;
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* line 15, ../scss/sections/mastframe/_mastframe-left-panel.scss */
+  .mastframe-left-panel {
+    width: 58px;
+  }
 }
 
 /* line 1, ../scss/sections/mastframe/_site-title.scss */
@@ -655,9 +661,12 @@ a:visited {
 }
 
 /* 
- *
+ * VARIABLES
  */
-/* line 5, ../scss/sections/mastframe/_socials-button.scss */
+/*
+  * style
+  */
+/* line 12, ../scss/sections/mastframe/_socials-button.scss */
 .socials-button {
   display: inline-block;
   vertical-align: middle;
@@ -674,10 +683,22 @@ a:visited {
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  font-size: 20px;
-  left: 27px;
+  font-size: 26.6px;
+  left: calc(50%);
 }
-/* line 13, ../scss/sections/mastframe/_socials-button.scss */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* line 12, ../scss/sections/mastframe/_socials-button.scss */
+  .socials-button {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* line 12, ../scss/sections/mastframe/_socials-button.scss */
+  .socials-button {
+    left: calc(50%);
+  }
+}
+/* line 26, ../scss/sections/mastframe/_socials-button.scss */
 .socials-button:after {
   position: absolute;
   content: "find me on social networks";
@@ -699,7 +720,7 @@ a:visited {
   transition: all 0.3s ease 0s;
 }
 
-/* line 24, ../scss/sections/mastframe/_socials-button.scss */
+/* line 37, ../scss/sections/mastframe/_socials-button.scss */
 .socials-button:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -709,31 +730,37 @@ a:visited {
   transform: rotate(90deg) translate(40%, 18%) scale(1);
 }
 
-/* line 30, ../scss/sections/mastframe/_socials-button.scss */
+/* line 43, ../scss/sections/mastframe/_socials-button.scss */
 .mastframe-left-panel[data-text-color="white"] .socials-button {
   color: #f5f5f5;
 }
 
-/* line 34, ../scss/sections/mastframe/_socials-button.scss */
+/* line 47, ../scss/sections/mastframe/_socials-button.scss */
 .mastframe-left-panel[data-text-color="dark-grey"] .socials-button {
   color: #333;
 }
 
-/* line 1, ../scss/sections/mastframe/_site-logo.scss */
+/* line 3, ../scss/sections/mastframe/_site-logo.scss */
 .site-logo {
   font-style: italic;
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 64px;
+  font-size: 85.12px;
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* line 3, ../scss/sections/mastframe/_site-logo.scss */
+  .site-logo {
+    font-size: 64px;
+  }
 }
 
-/* line 9, ../scss/sections/mastframe/_site-logo.scss */
+/* line 14, ../scss/sections/mastframe/_site-logo.scss */
 .mastframe-left-panel[data-text-color="white"] .site-logo {
   color: #f5f5f5;
 }
 
-/* line 13, ../scss/sections/mastframe/_site-logo.scss */
+/* line 18, ../scss/sections/mastframe/_site-logo.scss */
 .mastframe-left-panel[data-text-color="dark-grey"] .site-logo {
   color: #333;
 }
@@ -741,7 +768,7 @@ a:visited {
 /*
  * STYLES
  */
-/* line 10, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 11, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-is-left-menu-active="false"] .left-menu-button,
 [data-is-left-menu-active="true"] .left-menu-button,
 .left-menu-button {
@@ -749,14 +776,23 @@ a:visited {
   cursor: pointer;
   top: 50%;
   left: 0;
-  width: 58px;
-  height: 58px;
+  width: 77.14px;
+  height: 77.14px;
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-/* line 20, ../scss/sections/mastframe/_left-menu-button.scss */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* line 11, ../scss/sections/mastframe/_left-menu-button.scss */
+  [data-is-left-menu-active="false"] .left-menu-button,
+  [data-is-left-menu-active="true"] .left-menu-button,
+  .left-menu-button {
+    width: 58px;
+    height: 58px;
+  }
+}
+/* line 25, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-is-left-menu-active="false"] .left-menu-button .top-line,
 [data-is-left-menu-active="false"] .left-menu-button .bottom-line,
 [data-is-left-menu-active="true"] .left-menu-button .top-line,
@@ -764,7 +800,7 @@ a:visited {
 .left-menu-button .top-line,
 .left-menu-button .bottom-line {
   position: absolute;
-  height: 4px;
+  height: 6px;
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
@@ -772,30 +808,57 @@ a:visited {
   right: 15%;
   left: 15%;
 }
-/* line 28, ../scss/sections/mastframe/_left-menu-button.scss */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* line 25, ../scss/sections/mastframe/_left-menu-button.scss */
+  [data-is-left-menu-active="false"] .left-menu-button .top-line,
+  [data-is-left-menu-active="false"] .left-menu-button .bottom-line,
+  [data-is-left-menu-active="true"] .left-menu-button .top-line,
+  [data-is-left-menu-active="true"] .left-menu-button .bottom-line,
+  .left-menu-button .top-line,
+  .left-menu-button .bottom-line {
+    height: 4px;
+  }
+}
+/* line 36, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-is-left-menu-active="false"] .left-menu-button .top-line,
 [data-is-left-menu-active="true"] .left-menu-button .top-line,
 .left-menu-button .top-line {
-  top: calc(50% - 2px);
+  top: calc(50% - 3px);
   -moz-transition: top 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
   -o-transition: top 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
   -webkit-transition: top 0.4s cubic-bezier(0.2, 0, 0.7, 1);
   -webkit-transition-delay: 0s;
   transition: top 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
 }
-/* line 32, ../scss/sections/mastframe/_left-menu-button.scss */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* line 36, ../scss/sections/mastframe/_left-menu-button.scss */
+  [data-is-left-menu-active="false"] .left-menu-button .top-line,
+  [data-is-left-menu-active="true"] .left-menu-button .top-line,
+  .left-menu-button .top-line {
+    top: calc(50% - 2px);
+  }
+}
+/* line 43, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-is-left-menu-active="false"] .left-menu-button .bottom-line,
 [data-is-left-menu-active="true"] .left-menu-button .bottom-line,
 .left-menu-button .bottom-line {
-  bottom: calc(50% - 2px);
+  bottom: calc(50% - 3px);
   -moz-transition: bottom 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
   -o-transition: bottom 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
   -webkit-transition: bottom 0.4s cubic-bezier(0.2, 0, 0.7, 1);
   -webkit-transition-delay: 0s;
   transition: bottom 0.4s cubic-bezier(0.2, 0, 0.7, 1) 0s;
 }
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* line 43, ../scss/sections/mastframe/_left-menu-button.scss */
+  [data-is-left-menu-active="false"] .left-menu-button .bottom-line,
+  [data-is-left-menu-active="true"] .left-menu-button .bottom-line,
+  .left-menu-button .bottom-line {
+    bottom: calc(50% - 2px);
+  }
+}
 
-/* line 39, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 53, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-is-left-menu-active="false"] .left-menu-button .top-line {
   top: 27%;
   -moz-transition: -moz-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
@@ -804,7 +867,7 @@ a:visited {
   -webkit-transition-delay: 0s, 0.4s;
   transition: transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
 }
-/* line 43, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 57, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-is-left-menu-active="false"] .left-menu-button .bottom-line {
   bottom: 27%;
   -moz-transition: -moz-transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
@@ -814,9 +877,9 @@ a:visited {
   transition: transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, bottom 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
 }
 
-/* line 50, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 64, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-is-left-menu-active="true"] .left-menu-button .top-line {
-  top: calc(50% - 2px);
+  top: calc(50% - 3px);
   -moz-transform: rotate(-40deg);
   -ms-transform: rotate(-40deg);
   -webkit-transform: rotate(-40deg);
@@ -827,9 +890,15 @@ a:visited {
   -webkit-transition-delay: 0s, 0.4s;
   transition: top 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0s, transform 0.2s cubic-bezier(0.2, 0, 0.7, 1) 0.4s;
 }
-/* line 55, ../scss/sections/mastframe/_left-menu-button.scss */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* line 64, ../scss/sections/mastframe/_left-menu-button.scss */
+  [data-is-left-menu-active="true"] .left-menu-button .top-line {
+    top: calc(50% - 2px);
+  }
+}
+/* line 72, ../scss/sections/mastframe/_left-menu-button.scss */
 [data-is-left-menu-active="true"] .left-menu-button .bottom-line {
-  bottom: calc(50% - 2px);
+  bottom: calc(50% - 3px);
   -moz-transform: rotate(40deg);
   -ms-transform: rotate(40deg);
   -webkit-transform: rotate(40deg);
@@ -845,14 +914,20 @@ a:visited {
   @include animation-iteration-count(1);
   @include animation-fill-mode(forwards);*/
 }
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* line 72, ../scss/sections/mastframe/_left-menu-button.scss */
+  [data-is-left-menu-active="true"] .left-menu-button .bottom-line {
+    bottom: calc(50% - 2px);
+  }
+}
 
-/* line 68, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 88, ../scss/sections/mastframe/_left-menu-button.scss */
 .mastframe-left-panel[data-text-color="white"] .left-menu-button .top-line,
 .mastframe-left-panel[data-text-color="white"] .left-menu-button .bottom-line {
   background-color: #f5f5f5;
 }
 
-/* line 75, ../scss/sections/mastframe/_left-menu-button.scss */
+/* line 95, ../scss/sections/mastframe/_left-menu-button.scss */
 .mastframe-left-panel[data-text-color="dark-grey"] .left-menu-button .top-line,
 .mastframe-left-panel[data-text-color="dark-grey"] .left-menu-button .bottom-line {
   background-color: #333;

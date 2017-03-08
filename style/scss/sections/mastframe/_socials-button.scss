@@ -1,6 +1,13 @@
 /* 
- *
+ * VARIABLES
  */
+
+$socials-button-font-size:20px;
+$socials-button-font-size-xlarge:$socials-button-font-size*1.33;
+
+/*
+  * style
+  */
 
 .socials-button {
     @include inline-block();
@@ -8,8 +15,14 @@
     bottom: 0;
     @include transform-origin(0, 50%);
     @include transform(rotate(-90deg));
-    font-size: 20px;
-    left: 27px;
+    font-size: $socials-button-font-size-xlarge;
+    @include device-large() {
+        font-size: $socials-button-font-size;
+    }
+    left: calc(50%);
+    @include device-large() {
+        left: calc(50%);
+    }
     &:after {
         position: absolute;
         content: "find me on social networks";

@@ -1,9 +1,14 @@
+$site-logo-font-size:64px;
+$site-logo-font-size-xlarge:$site-logo-font-size*1.33;
 .site-logo {
     font-style: italic;
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 64px;
+    font-size: $site-logo-font-size-xlarge;
+    @include device-large() {
+        font-size: $site-logo-font-size;
+    }
 }
 
 .mastframe-left-panel[data-text-color="white"] .site-logo {
